@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Research on Hanna</title>
+    <title>Hanna</title>
     <link>/research/</link>
-    <description>Recent content in Research on Hanna</description>
+    <description>Recent content on Hanna</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zn-Hans</language>
-    <lastBuildDate>Wed, 19 Aug 2015 20:29:37 -0700</lastBuildDate>
+    <lastBuildDate>Thu, 23 Jul 2015 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/research/index.xml" rel="self" type="application/rss+xml" />
     
