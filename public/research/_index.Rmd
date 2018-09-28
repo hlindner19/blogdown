@@ -5,4 +5,4 @@ date: "2015-07-23"
 ---
 
 
-![](/images/research/header.png)
+![](/images/research/header.png){ width=80% }
