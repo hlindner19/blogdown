@@ -24,7 +24,7 @@ date: "2015-07-23"
 </style>
 
 <div class="column-left">
-![](/images/about/IMG_3670 (1).jpg){ width=100% } 
+![](/images/about/IMG_3670 (1).jpg){ width=91% } 
 </div>
 <div class=""column-right">
 **Background:** Born and raised in the frozen suburbs of Minneapolis Minnesota, I fled to Florida in 2013 to study Statistics at the University of Central Florida ([Go Knights!](http://ucfknights.com/SportSelect.dbml?SPID=181613&SPSID=1115426&DB_OEM_ID=34100)). I discovered that research is really important and medicine is a fascinating field, so at some point I decided I should try to become an expert in Biostatistics. Now I'm in my three years deep in my PhD at the University of Pennsylvania in the department of Biostatistics, Epidemiology and Informatics.  
