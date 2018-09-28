@@ -4,4 +4,4 @@ draft = false
 title = "Conservation"
 +++
 
-A place for all things conservation. Sometimes it's about sharks, sometimes about oil, forests, politics... Or maybe it's just a burning thought.
+A place for all things conservation. Sometimes it's about sharks, sometimes about oil, forests, politics... Or maybe just a burning thought.

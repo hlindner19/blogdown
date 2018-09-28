@@ -4,4 +4,4 @@ draft = false
 title = "Travel"
 +++
 
-Here is where I post photos, stories, tips and recommendations from recent trips.
+Photos, stories, tips and recommendations from recent trips.
