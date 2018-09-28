@@ -13,7 +13,7 @@ Growing up in a land-locked area, I had little exposure to the ocean and the cre
 In 2016 I watched a documentary on YouTube called Sharkwater. It was an exposé on the shark fin industry, produced by Rob Stewart of Toronto Canada. I already knew that sharks weren't well respected. In the name of fear and greed, people treat sharks in ways that would ignite public outcry if the same actions were taken upon any land-dwelling animal. However, the scope of the problem was far beyond anything I had previously understood. Over 100 million sharks were being killed each year for the multi billion-dollar industry of shark fin soup (a Chinese delicacy), resulting in a 90+\% decline in shark populations. The impact of this on ocean ecosystems is nauseating. I redoubled my efforts to be a champion and spokesperson for sharks.
 
 <center>
-[![](/images/conservation/sharkwater1.png){ width=20% }](https://focused-mcclintock-bf8ed8.netlify.com/conservation/2018-09-26-robstewart/sharkwater1.png)
+[![](/images/conservation/sharkwater1.png){ width=20% }](https://focused-mcclintock-bf8ed8.netlify.com/conservation/sharkwater1.png)
 ![](/images/conservation/revolution1.jpg){ width=23% }
 ![](/images/conservation/sharkwater2.jpeg){ width=20% }
 </center>
