@@ -11,14 +11,5 @@
 	<atom:link href="/about/index.xml" rel="self" type="application/rss+xml" />
     
     
-    <item>
-      <title>About Hanna</title>
-      <link>/about/aboutme/</link>
-      <pubDate>Wed, 26 Sep 2018 21:17:12 -0500</pubDate>
-      
-      <guid>/about/aboutme/</guid>
-      <description>.column-left{ float: left; width: 33%; text-align: left; } .column-center{ display: inline-block; width: 33%; text-align: center; } .column-right{ float: left; width: 45%; text-align: left; }    Background: Born and raised in the frozen suburbs of Minneapolis Minnesota, I fled to Florida in 2013 to study Statistics at the University of Central Florida (Go Knights!). I discovered that research is really important and medicine is a fascinating field, so at some point I decided I should try to become an expert in Biostatistics.</description>
-    </item>
-    
   </channel>
 </rss>
