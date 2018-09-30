@@ -1,0 +1,9 @@
+---
+title: "Oahu, Hawai'i"
+author: "Hanna Lindner"
+date: 2018-09-25T21:17:12-05:00
+categories: ["Travel"]
+tags: ["Hawaii", "Oahu"]
+img: "images/travel/IMG_1951.jpg"
+---
+
