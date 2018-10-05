@@ -1,4 +1,4 @@
-baseURL                   = "https://hannalindner.com/"
+baseURL                   = "https://www.hannalindner.com/"
 builddrafts                = false
 languageCode               = "zn-Hans"
 canonifyurls               = true
