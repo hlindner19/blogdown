@@ -24,12 +24,12 @@ date: "2015-07-23"
 </style>
 
 <div class="column-left">
-[![](/images/about/IMG_3670 (1).jpg){ width=98% }](https://hannalindner.netlify.com/about/IMG_3670.jpg) 
+[![](/images/about/IMG_3670 (1).jpg){ width=98% }](https://www.hannalindner.com/about/IMG_3670.jpg) 
 </div>
 <div class=""column-right">
 **Background:** Born and raised in the frozen suburbs of Minneapolis Minnesota, I fled to Florida in 2013 to study Statistics at the University of Central Florida ([Go Knights!](http://ucfknights.com/SportSelect.dbml?SPID=181613&SPSID=1115426&DB_OEM_ID=34100)). I discovered that research is really important and medicine is a fascinating field, so at some point I decided I should try to become an expert in Biostatistics. Now I'm in my three years deep in my PhD at the University of Pennsylvania in the department of Biostatistics, Epidemiology and Informatics.  
 <br>
 **Research:** My master's thesis focused on quantifying the impact of dialysis treatment noncompliance on poor post-kidney transplant outcomes (publication in progress). My dissertation work will focus on methods for predictive modeling of longitudinal biomarkers, with applications to melanoma and mental health. [Dr. Warren Bilker](https://www.dbei.med.upenn.edu/bio/warren-b-bilker-phd) and [Dr. Phyllis Gimotty](https://www.dbei.med.upenn.edu/bio/phyllis-gimotty-phd) are graciously guiding me on this journey. Find my CV [here](https://hannalindner.netlify.com/about/CV_09.2018.pdf).  
 <br>
-**Other:** This website was born from an effervescent need to talk about conservation ([sharks](https://www.sharkwater.com/), specifically) and tell others how critical it is to educate ourselves [(and do something about it)](https://hannalindner.netlify.com/conservation/2018-09-26-robstewart/). When I'm not a picketing hippy, I enjoy [globetrotting](https://hannalindner.netlify.com/travel/) my weekends away, viewing memes, kickboxing, and forcing my bunny, Ophelia, to love me.
+**Other:** This website was born from an effervescent need to talk about conservation ([sharks](https://www.sharkwater.com/), specifically) and tell others how critical it is to educate ourselves [(and take action)](https://www.hannalindner.com/conservation/2018-09-26-robstewart/). When I'm not a picketing hippy, I enjoy [globetrotting](https://www.hannalindner.com/travel/) my weekends away, viewing memes, kickboxing, and forcing my bunny, Ophelia, to love me.
 </div>
