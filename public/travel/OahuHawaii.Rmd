@@ -76,7 +76,7 @@ Seeing as I hadn't planned on taking a vacation, my budget was rather limited. T
 </style>
 
 <div class="column-left">
-[![](/images/travel/IMG_1865.jpg){ width=56% }](https://www.hannalindner.com/travel/oahuhawaii/IMG_1865.jpg)  
+[![](/images/travel/IMG_1865.jpg){ width=56% }](https://www.hannalindner.com/travel/oahuhawaii/IMG_1865.jpg)
 [![](/images/travel/IMG_1829.jpg){ width=55% }](https://www.hannalindner.com/travel/oahuhawaii/IMG_1829.jpg)
 </div>
 <div class="column-right">
