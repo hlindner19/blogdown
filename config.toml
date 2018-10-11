@@ -1,4 +1,8 @@
 baseURL                   = "https://www.hannalindner.com/"
+
+# analytics
+googleAnalytics          = "UA-127385272-1"
+  
 builddrafts                = false
 languageCode               = "zn-Hans"
 canonifyurls               = true
@@ -83,7 +87,6 @@ pygmentsuseclasses         = true
   linkedin                 = "//linkedin.com/in/lindnerhanna/"
   facebook                 = "//facebook.com/H.Lindner"
   
-  # analytics
-  googleAnalytics          = "UA-127385272-1"
+
     
     
