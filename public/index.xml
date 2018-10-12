@@ -26,7 +26,7 @@
       <pubDate>Tue, 25 Sep 2018 21:17:12 -0500</pubDate>
       
       <guid>/travel/oahuhawaii/</guid>
-      <description>The trip that started them all. I had zero intentions of traveling to Hawaii. My goal was to get to Canada for a fishing trip, but after my flights fell a part I wasn’t going to be able to make it in time to meet up with my family to catch my ride to Canada.</description>
+      <description>.column-left{ float: left; width: 49%; text-align: right; } .column-center{ display: inline-block; width: 0%; text-align: center; } .column-right{ float: right; width: 49%; text-align: left; }   .column-whole{ float: left; width: 100%; text-align: left; }   .column-whole-center{ float: left; width: 100%; text-align: center; }  The trip that started them all.</description>
     </item>
     
     <item>
