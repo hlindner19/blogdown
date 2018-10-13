@@ -6,10 +6,19 @@
     <description>Recent content in Hikes on Hanna</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zn-Hans</language>
-    <lastBuildDate>Tue, 25 Sep 2018 21:17:12 -0500</lastBuildDate>
+    <lastBuildDate>Fri, 12 Oct 2018 21:17:12 -0500</lastBuildDate>
     
 	<atom:link href="/tags/hikes/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Salt Lake City, Utah</title>
+      <link>/travel/saltlakecity_utah/</link>
+      <pubDate>Fri, 12 Oct 2018 21:17:12 -0500</pubDate>
+      
+      <guid>/travel/saltlakecity_utah/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Oahu, Hawai&#39;i</title>
@@ -17,7 +26,7 @@
       <pubDate>Tue, 25 Sep 2018 21:17:12 -0500</pubDate>
       
       <guid>/travel/oahuhawaii/</guid>
-      <description>.column-left{ float: left; width: 49%; text-align: right; } .column-center{ display: inline-block; width: 0%; text-align: center; } .column-right{ float: right; width: 49%; text-align: left; }   .column-whole{ float: left; width: 100%; text-align: left; }   .column-whole-center{ float: left; width: 100%; text-align: center; }  The trip that started them all.</description>
+      <description>The trip that started them all. I had zero intentions of traveling to Hawaii. My goal was to get to Canada for a fishing trip, but after my flights fell a part I wasn’t going to be able to make it in time to meet up with my family to catch my ride to Canada.</description>
     </item>
     
   </channel>

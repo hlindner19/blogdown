@@ -7,6 +7,10 @@ tags: ["Hawaii", "Oahu", "Hikes"]
 img: "images/travel/IMG_1951.jpg"
 ---
 
+
+
+The trip that started them all. I had zero intentions of traveling to Hawaii. My goal was to get to Canada for a fishing trip, but after my flights fell a part I wasn't going to be able to make it in time to meet up with my family to catch my ride to Canada. I didn't take vacation days for nothing... so I switched my flight to Honolulu during my layover. The only downside: the type of things you pack for Canada versus Hawai'i are very different.
+  
 <style>
 .column-left{
   float: left;
@@ -40,10 +44,6 @@ img: "images/travel/IMG_1951.jpg"
   text-align: center;
 }
 </style>
-
-The trip that started them all. I had zero intentions of traveling to Hawaii. My goal was to get to Canada for a fishing trip, but after my flights fell a part I wasn't going to be able to make it in time to meet up with my family to catch my ride to Canada. I didn't take vacation days for nothing... so I switched my flight to Honolulu during my layover. The only downside: the type of things you pack for Canada versus Hawai'i are very different.
-  
-
 ---  
 
 <center>
@@ -152,3 +152,7 @@ Since I hadn't planned on taking a vacation, my budget was rather limited. To cu
 **Island Vintage Shave Ice:** This popular spot located at the Royal Hawaiian Center next to Waikiki Beach has the best shave ice I have encountered. It's made with natural ingrediants rather than syrups and is garnished with fresh fruits, popping boba, and mochi. The line is always long but definitely worth the wait after a tiring day.
 
 ---  
+
+<center>
+[![](/images/travel/IMG_8863.jpg){ width=70% }](https://www.hannalindner.com/travel/oahuhawaii/IMG_8863.jpg)
+</center>
