@@ -1,0 +1,8 @@
+---
+title: "Banff, Alberta CA"
+author: "Hanna Lindner"
+date: 2018-10-12T21:17:12-05:00
+categories: ["Travel"]
+tags: ["Canada", "Banff", "Hikes", "Winter"]
+img: "images/travel/IMG_0005.JPG"
+---

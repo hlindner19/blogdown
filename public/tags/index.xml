@@ -6,10 +6,28 @@
     <description>Recent content in Tags on Hanna</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zn-Hans</language>
-    <lastBuildDate>Tue, 25 Sep 2018 21:17:12 -0500</lastBuildDate>
+    <lastBuildDate>Fri, 12 Oct 2018 21:17:12 -0500</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Banff</title>
+      <link>/tags/banff/</link>
+      <pubDate>Fri, 12 Oct 2018 21:17:12 -0500</pubDate>
+      
+      <guid>/tags/banff/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Canada</title>
+      <link>/tags/canada/</link>
+      <pubDate>Fri, 12 Oct 2018 21:17:12 -0500</pubDate>
+      
+      <guid>/tags/canada/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Hawaii</title>
@@ -84,11 +102,29 @@
     </item>
     
     <item>
+      <title>Summer</title>
+      <link>/tags/summer/</link>
+      <pubDate>Fri, 12 Oct 2018 21:17:12 -0500</pubDate>
+      
+      <guid>/tags/summer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Utah</title>
       <link>/tags/utah/</link>
       <pubDate>Fri, 12 Oct 2018 21:17:12 -0500</pubDate>
       
       <guid>/tags/utah/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Winter</title>
+      <link>/tags/winter/</link>
+      <pubDate>Fri, 12 Oct 2018 21:17:12 -0500</pubDate>
+      
+      <guid>/tags/winter/</guid>
       <description></description>
     </item>
     

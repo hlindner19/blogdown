@@ -48,7 +48,7 @@ The trip that started them all. I had zero intentions of traveling to Hawaii. My
 
 <center>
 <font size="5">
-**Where to stay**
+**WHERE TO STAY**
 </font>
 </center>
 <center>
@@ -63,7 +63,7 @@ The trip that started them all. I had zero intentions of traveling to Hawaii. My
 
 <center>
 <font size="5">
-**How to get around**
+**HOW TO GET AROUND**
 </font>
 </center>
 <center>
@@ -76,7 +76,7 @@ Since I hadn't planned on taking a vacation, my budget was rather limited. To cu
 
 <center>
 <font size="5">
-**What to do**
+**WHAT TO DO**
 </font>
 </center>
 
@@ -133,7 +133,7 @@ Since I hadn't planned on taking a vacation, my budget was rather limited. To cu
 
 <center>
 <font size="5">
-**Where to eat**  
+**WHERE TO EAT**  
 </font>
 </center>
 
