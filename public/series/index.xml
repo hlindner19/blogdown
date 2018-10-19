@@ -10,5 +10,14 @@
 	<atom:link href="/series/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>Sharks</title>
+      <link>/series/sharks/</link>
+      <pubDate>Wed, 26 Sep 2018 21:17:12 -0500</pubDate>
+      
+      <guid>/series/sharks/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

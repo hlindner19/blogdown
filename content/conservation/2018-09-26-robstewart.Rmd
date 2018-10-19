@@ -5,6 +5,7 @@ date: 2018-09-26T21:17:12-05:00
 categories: ["Conservation"]
 tags: ["Rob Stewart", "Sharkwater", "Revolution", "Sharks"]
 img: "images/conservation/rob-stewart-portrait.jpg"
+series: ["Sharks"]
 summaryLength: 30
 ---
 

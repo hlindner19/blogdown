@@ -64,7 +64,7 @@ pygmentsuseclasses         = true
   author                   = "Hanna Lindner"
   description              = ["'Conservation is the preservation of human life'", "- Rob Stewart"]  # appears in the site header when set to a non-empty string
   welcome_head             = "Welcome to my homepage"
-  welcome_word             = "it's about everything I care about"
+  welcome_word             = ""
 
   latestpostscount         = 5                             # how many posts to display on the home page
   bloggroupby              = 'month'
@@ -86,6 +86,7 @@ pygmentsuseclasses         = true
   email                    = "hlindner@pennmedicine.upenn.edu"
   linkedin                 = "//linkedin.com/in/lindnerhanna/"
   facebook                 = "//facebook.com/H.Lindner"
+  include_rss              = true 
   
 
     

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Conservation on Hanna</title>
+    <link>/series/conservation/</link>
+    <description>Recent content in Conservation on Hanna</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zn-Hans</language>
+    <lastBuildDate>Wed, 26 Sep 2018 21:17:12 -0500</lastBuildDate>
+    
+	<atom:link href="/series/conservation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Rob Stewart is my hero.</title>
+      <link>/conservation/2018-09-26-robstewart/</link>
+      <pubDate>Wed, 26 Sep 2018 21:17:12 -0500</pubDate>
+      
+      <guid>/conservation/2018-09-26-robstewart/</guid>
+      <description>Growing up in a land-locked area, I had little exposure to the ocean and the creatures that call it home. So it was a bit unusual that I developed a deep-seated love for the predator of the seas - sharks. The moment I looked past their media-driven reputation as ruthless killers, I discovered their worth.</description>
+    </item>
+    
+  </channel>
+</rss>

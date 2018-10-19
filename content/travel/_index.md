@@ -4,4 +4,6 @@ draft = false
 title = "Travel"
 +++
 
-Photos, stories, tips and recommendations from recent trips.
+<center>
+° Chasing starry skies and endless nirvana °
+</center>

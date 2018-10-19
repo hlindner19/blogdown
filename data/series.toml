@@ -1,11 +1,4 @@
 [[series]]
-name = "观后repo"
-img = "images/blog/2018-08/test3.jpg"
-summary = "This is the place I write reviews"
-
-[[series]]
-name = "blog养成记"
-img = "images/blog/2018-08/test5.jpg"
-summary = "How I build up my personal website"
-
-
+name = "Sharks"
+img = "images/sharkwater2.jpg"
+summary = "Why I love them, and how we save them"
