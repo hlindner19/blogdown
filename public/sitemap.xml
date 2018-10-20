@@ -13,6 +13,11 @@
   </url>
   
   <url>
+    <loc>/travel/zionnationalpark_utah/</loc>
+    <lastmod>2018-10-12T21:17:12-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/conservation/2018-09-26-robstewart/</loc>
     <lastmod>2018-09-26T21:17:12-05:00</lastmod>
   </url>
@@ -62,6 +67,12 @@
   </url>
   
   <url>
+    <loc>/tags/camping/</loc>
+    <lastmod>2018-10-12T21:17:12-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tags/canada/</loc>
     <lastmod>2018-10-12T21:17:12-05:00</lastmod>
     <priority>0</priority>
@@ -92,6 +103,12 @@
   
   <url>
     <loc>/tags/hikes/</loc>
+    <lastmod>2018-10-12T21:17:12-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/national-parks/</loc>
     <lastmod>2018-10-12T21:17:12-05:00</lastmod>
     <priority>0</priority>
   </url>
@@ -168,6 +185,12 @@
   
   <url>
     <loc>/tags/winter/</loc>
+    <lastmod>2018-10-12T21:17:12-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/zion/</loc>
     <lastmod>2018-10-12T21:17:12-05:00</lastmod>
     <priority>0</priority>
   </url>
