@@ -1,13 +1,13 @@
 ---
-title: "Zion National Park, Utah (in progress)"
+title: "Zion National Park, Utah"
 author: "Hanna Lindner"
-date: 2018-9-12T21:17:12-05:00
+date: 2018-10-12T21:17:12-05:00
 categories: ["Travel"]
 tags: ["Utah", "Zion", "Hikes", "Camping", "National Parks"]
 img: "images/travel/IMG_0290.jpg"
 ---
 
-Zion National Park had been at the top of my list for years and I finally made it there on a school spring break trip with a group of randos. Zion exceeded all of my expectations, including how cold it is in March. This trip inspired me to make a goal to see as many National Parks as possible in my lifetime!
+Zion National Park had been at the top of my list for years and I finally made it there on a school spring break trip with a group of awesome randos. Zion exceeded all of my expectations, including how cold it is in March. This trip inspired me to make a goal to see as many National Parks as possible in my lifetime!
 
 ---
 
@@ -37,7 +37,7 @@ Camp! Zion has three [campgrounds](https://www.nps.gov/zion/planyourvisit/campgr
 </font>
 </center>
 
-A rental car here is a necessity (mostly to get to the park, and to get around during the off-season). If you are visiting during the busy season (March - November), you cannot drive through the canyon on Zion Canyon Scenic Dive, you must use the [free park shuttle](https://www.nps.gov/zion/planyourvisit/shuttle-system.htm) which leaves from Zion Canyon Visitor Center and stops at every trail along the route. Upon entering the park, you have to purchase a park pass if you don't have an annual for \$35, valid for seven days.
+A rental car here is a necessity (mostly to get to the park, and to get around during the off-season). If you are visiting during the busy season (March - November), you cannot drive through the canyon on Zion Canyon Scenic Dive, you must use the [free park shuttle](https://www.nps.gov/zion/planyourvisit/shuttle-system.htm) which leaves from Zion Canyon Visitor Center and stops at every trail along the route. Upon entering the park, you have to purchase a park pass if you don't have an annual pass for \$35, valid for seven days.
 
 ---
 
@@ -48,27 +48,56 @@ A rental car here is a necessity (mostly to get to the park, and to get around d
 </center>
 
 <center>
-[![](/images/travel/IMG_0126.JPG){ width=30% }](https://www.hannalindner.com/travel/ZNP_Utah/IMG_0126.JPG)
-[![](/images/travel/IMG_4098.JPG){ width=30% }](https://www.hannalindner.com/travel/ZNP_Utah/IMG_4098.JPG)
-[![](/images/travel/IMG_4001.JPG){ width=20% }](https://www.hannalindner.com/travel/ZNP_Utah/IMG_4001.JPG)
+[![](/images/travel/IMG_0126.JPG){ width=33% }](https://www.hannalindner.com/travel/ZNP_Utah/IMG_0126.JPG)
+[![](/images/travel/IMG_4098.JPG){ width=33% }](https://www.hannalindner.com/travel/ZNP_Utah/IMG_4098.JPG)
+[![](/images/travel/IMG_4001.JPG){ width=22% }](https://www.hannalindner.com/travel/ZNP_Utah/IMG_4001.JPG)
 </center>
 
-**Valley of Fire:** On the first night of camping, it was so cold in Zion Canyon that we instead decided to camp in the aptly named [Valley of Fire State Park](http://parks.nv.gov/parks/valley-of-fire) in Nevada, which is on the way from Las Vegas to ZNP. Since we were there anyways, we spent the following day doing various short hikes through the park, including the Wall of Fire. Many of these hikes are marked with petroglyphs dating back more than 2,000 years; my personal favorite being Mystical Bat Woman. The park entrance fee is \$10 and camping is \$20/night.  
+**Valley of Fire:** On the first night of camping, it was so cold in Zion Canyon that we decided to camp in the aptly named [Valley of Fire State Park](http://parks.nv.gov/parks/valley-of-fire) in Nevada instead, which is on the way from Las Vegas to ZNP. We made lemonade with our lemons and spent the following day doing various short hikes through the park, including the Wall of Fire. Many of these hikes are marked with petroglyphs dating back more than 2,000 years; my personal favorite being Mystical Bat Woman. The park entrance fee is \$10 and camping is \$20/night.  
 
 <center>
-[![](/images/travel/IMG_0761.JPG){ width=30% }](https://www.hannalindner.com/travel/ZNP_Utah/IMG_0761.JPG)
-[![](/images/travel/IMG_0762.JPG){ width=30% }](https://www.hannalindner.com/travel/ZNP_Utah/IMG_0762.JPG)
+[![](/images/travel/MVI_0770 (1).mp4){ width=100% }](https://www.hannalindner.com/travel/ZNP_Utah/MVI_0770 (1).mp4)
+[![](/images/travel/IMG_0762.JPG){ width=26% }](https://www.hannalindner.com/travel/ZNP_Utah/IMG_0762.JPG)
+[![](/images/travel/IMG_0766.jpg){ width=57% }](https://www.hannalindner.com/travel/ZNP_Utah/IMG_0766.jpg)
 </center>
 
-**Angel's Landing:** Angel's landing is the quintessential Zion hike, which is why it is so crowded *all* the time. Getting to the trail head (The Grotto) as early as possible is highly encouraged. This 4.1 mile (6.6 km) hike can be broken into two pieces. First, you ascend 'Walters Wiggles', a series of 21 steep switchbacks covering 1.5 miles that take you to the first observation point. If you don't want to continue onto 'the chains' (though I highly recommend you do) this is where you stop. The chains portion covers an additional half-mile alone the ridge line, with drops to the canyon floor on either side. Support chains are secured into the rock in sketchier areas. The trail is so narrow in most places that you are hiking in a single-file line behind herds of other hikers. There's usually a handful of petrified people so the going can be slow. With a grippy pair of shoes and your whits about you, there's little to fear though. First-time hikers, children, and senior people complete this regularly with no problems. The views of the canyon from the final lookout are spectacular and worth the extra work!  
+**Angels Landing:** [Angels Landing](https://www.alltrails.com/trail/us/utah/angels-landing-trail) is the quintessential Zion hike, which is why it is so crowded *all* the time. Getting to the trail head (The Grotto) as early as possible is highly encouraged. This 4.1 mile (6.6 km) hike can be broken into two pieces. First, you ascend 'Walters Wiggles', a series of 21 steep switchbacks covering 1.5 miles that take you to the first observation point. If you choose not to continue onto 'the chains' (though I highly recommend you do) this is where you stop. The chains portion covers an additional half-mile along the ridge line, with drops to the canyon floor on either side. Support chains are secured into the rock in sketchier areas for added security. The trail is so narrow in most places that you are hiking in a single-file line behind herds of other hikers. There's usually a handful of petrified people so the going can be slow. With a grippy pair of shoes and your whits about you, there's little to fear though. First-time hikers, children, and senior people complete this regularly with no problems. The views of the canyon from the final lookout are spectacular and worth the extra work!  
 
+<center>
+[![](/images/travel/2590.jpg){ width=34% }](https://www.hannalindner.com/travel/ZNP_Utah/2590.jpg)
+[![](/images/travel/IMG_0607.jpg){ width=30% }](https://www.hannalindner.com/travel/ZNP_Utah/IMG_0607.jpg)
+[![](/images/travel/IMG_0648.jpg){ width=30% }](https://www.hannalindner.com/travel/ZNP_Utah/IMG_0648.jpg)
+</center>
 
+**The Narrows:** [The Narrows](https://www.alltrails.com/trail/us/utah/zion-narrows-trail-to-imlay-temple-and-big-spring) is a slot canyon out-and-back hike that takes you up the Virgin River. The trail starts at Sinawava Temple; follow the trail walk about a mile until you're able to get in the river. Zion Outfitter rents out water shoes, socks, dry bibs, and walking sticks to make the hike more comfortable - this gear is tailored to the season and water levels. Packages start at \$24. Even if you choose not to rent gear, a hiking pole or walking stick is highly recommended so you can gauge water depth, as the river floor is very rocky and uneven, plus it helps with stabilization when the current gets strong. You can turn back at any point on this hike, but I suggest hiking at least to where Wall Street begins, about 3 miles in. Note that you *must* turn back at Big Springs, which is 5 miles in. There are longer variations to this hike, but they require permits and shuttles.  
 
-**The Narrows:**
-**East Rim & East Mesa trail to Observation Point:**
-**Watchman Trail:**
-**Bryce Canyon National Park:**
-**Spend a day in Vegas:**
+<center>
+[![](/images/travel/IMG_0238.jpg){ width=47% }](https://www.hannalindner.com/travel/ZNP_Utah/IMG_0238.jpg)
+[![](/images/travel/IMG_0231.jpg){ width=47% }](https://www.hannalindner.com/travel/ZNP_Utah/IMG_0231.jpg)
+[![](/images/travel/IMG_0247.jpg){ width=22% }](https://www.hannalindner.com/travel/ZNP_Utah/IMG_0247.jpg)
+[![](/images/travel/IMG_0257.jpg){ width=49% }](https://www.hannalindner.com/travel/ZNP_Utah/IMG_0257.jpg)
+</center>
+
+**East Rim & East Mesa to Observation Point:** Another very popular Zion hike, [East Rim & East Mesa](https://www.alltrails.com/trail/us/utah/east-rim-trail-to-observation-point) covers 7.1 miles (11.4 km) and almost 3,000 feet in elevation gain. The trail head is at Weeping Rock, and you should take the East Rim/Hidden Canyon trail. Every step on this trail has gorgeous sweeping views, and takes you through a slot canyon, called Echo Canyon. The latter portion of the hike is a series of steep switchbacks that will test your endurance and knees. I'd argue this observation point is much better than Angels Landing, and thankfully far less crowded too. Also, don't feed the adorable chipmunks!
+
+<center>
+[![](/images/travel/IMG_0448.jpg){ width=60% }](https://www.hannalindner.com/travel/ZNP_Utah/IMG_0448.jpg)
+</center>
+
+**Watchman Trail:** If you find yourself back at camp for the evening with a little bit of gas left in your system, take a leisurely hike on the [Watchman trail](https://www.alltrails.com/trail/us/utah/the-watchman-trail), which leaves from Watchman Campground. It's an easy-rated 3.1 mile (5 km) out-and-back, great for a peaceful cool down.
+
+<center>
+[![](/images/travel/IMG_0354.jpg){ width=47% }](https://www.hannalindner.com/travel/ZNP_Utah/IMG_0354.jpg)
+[![](/images/travel/IMG_0425.jpg){ width=47% }](https://www.hannalindner.com/travel/ZNP_Utah/IMG_0425.jpg)
+</center>
+
+**Bryce Canyon National Park:** This is where the rental car really comes in handy. BCNP is only 150 miles from Zion, well worth the drive IMO to see the crazy hoodoos. [Navajo Loop and Queen's Garden Trail](https://www.alltrails.com/trail/us/utah/navajo-loop-and-queens-garden-trail) is a great way to see the hoodoos if you only have a short amount of time here. The 2.6 mile (4.2 km) loop hike is moderately rated and takes you through the canyon to see the rock spires up close, including Thor's Hammer. The hoodoos mainly form when moisture seeps into cracks in the rock, freezes and expands, eroding the rock away. The whole process is really fascinating, and there's a ton more information in the Visitor Center. There are plenty of 'scenic stop' points along the main drive through the Park, including 'Natural Bridge', pictured above.
+
+<center>
+[![](/images/travel/IMG_0067.jpg){ width=60% }](https://www.hannalindner.com/travel/ZNP_Utah/IMG_0067.jpg)
+</center>
+
+**Spend a day in Vegas:** If you're flying into Las Vegas to get to Zion, you might as well spend a day there, soaking in all the weirdness it has to offer, seeing a show and hitting a few slot machines.
 
 ---
 
@@ -88,5 +117,6 @@ Literally anything you can cook on a fire, including pizza with dried pineapple,
 ---
 
 <center>
-[![](/images/travel/IMG_0111.JPG){ width=60% }](https://www.hannalindner.com/travel/ZNP_Utah/IMG_0111.JPG)
+[![](/images/travel/IMG_0111.JPG){ width=45% }](https://www.hannalindner.com/travel/ZNP_Utah/IMG_0111.JPG)
+[![](/images/travel/IMG_0317.jpg){ width=45% }](https://www.hannalindner.com/travel/ZNP_Utah/IMG_0317.jpg)
 </center>
