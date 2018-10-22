@@ -8,6 +8,11 @@
   </url>
   
   <url>
+    <loc>/travel/kauai_hawaii/</loc>
+    <lastmod>2018-10-13T21:17:12-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/travel/banff_albertaca/</loc>
     <lastmod>2018-10-12T21:17:12-05:00</lastmod>
   </url>
@@ -97,13 +102,19 @@
   
   <url>
     <loc>/tags/hawaii/</loc>
-    <lastmod>2018-09-25T21:17:12-05:00</lastmod>
+    <lastmod>2018-10-13T21:17:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/hikes/</loc>
-    <lastmod>2018-10-12T21:17:12-05:00</lastmod>
+    <lastmod>2018-10-13T21:17:12-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/kauai/</loc>
+    <lastmod>2018-10-13T21:17:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -173,7 +184,7 @@
   
   <url>
     <loc>/categories/travel/</loc>
-    <lastmod>2018-10-12T21:17:12-05:00</lastmod>
+    <lastmod>2018-10-13T21:17:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
