@@ -5,5 +5,5 @@ title = "Travel"
 +++
 
 <center>
-° Chasing starry skies and endless nirvana °
+° Chasing starry skies and endless nirvana ° (on a budget)
 </center>
