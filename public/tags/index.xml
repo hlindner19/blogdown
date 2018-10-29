@@ -6,10 +6,19 @@
     <description>Recent content in Tags on Hanna</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zn-Hans</language>
-    <lastBuildDate>Sat, 13 Oct 2018 21:17:12 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 29 Oct 2018 21:17:12 -0500</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Alternative Energy</title>
+      <link>/tags/alternative-energy/</link>
+      <pubDate>Mon, 29 Oct 2018 21:17:12 -0500</pubDate>
+      
+      <guid>/tags/alternative-energy/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Banff</title>
@@ -17,6 +26,15 @@
       <pubDate>Sat, 13 Oct 2018 21:17:12 -0500</pubDate>
       
       <guid>/tags/banff/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Big Oil</title>
+      <link>/tags/big-oil/</link>
+      <pubDate>Mon, 29 Oct 2018 21:17:12 -0500</pubDate>
+      
+      <guid>/tags/big-oil/</guid>
       <description></description>
     </item>
     
@@ -35,6 +53,15 @@
       <pubDate>Sat, 13 Oct 2018 21:17:12 -0500</pubDate>
       
       <guid>/tags/canada/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Emissions</title>
+      <link>/tags/emissions/</link>
+      <pubDate>Mon, 29 Oct 2018 21:17:12 -0500</pubDate>
+      
+      <guid>/tags/emissions/</guid>
       <description></description>
     </item>
     
