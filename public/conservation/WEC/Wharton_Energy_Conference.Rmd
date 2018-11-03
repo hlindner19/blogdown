@@ -1,0 +1,60 @@
+---
+title: "Takeaways from the Wharton Energy Conference"
+author: "Hanna Lindner"
+date: 2018-10-29T21:17:12-05:00
+categories: ["Conservation"]
+tags: ["Big Oil", "Alternative Energy", "Emissions"]
+img: "images/conservation/WEC/IMG_1506.JPG"
+summaryLength: 30
+---
+
+Since immersing myself into the conservation world, I've tried to take every opportunity to learn more so that I can gain a better understanding of the problems we will face in our lifetimes. So with no idea of what to expect and minimal background knowledge of the energy industry, I attended the Wharton Energy Conference. Hosted by University of Pennsylvania MBA students, I was very curious how much of the conversation would be guided by business interests versus climate challenges. Here are 5 high-level messages I walked away with.  
+
+**1. Big Oil doesn't like to have serious conversations about climate change**  
+I have to tell you a story. The keynote speaker for the conference was Bruce Niemeyer, vice president of Strategic Planning at Chevron. His talk was titled *Beyond the Headlines: The Future of Energy*. I can't say I had high hopes for this one, but I certainly wasn't expecting what happened. Mr. Niemeyer spent an hour stressing the increased demand for energy in the next 20 years as developing countries expand. Specifically, while oil and gas will represent a smaller percentage of the resource mix, the amount of oil and gas supplied will be roughly 50 quadrillion BTUs greater in 2035 than it was in 2016. To my dismay, two slides and no more than two minutes were dedicated to how Chevron would sustainably conduct business in the face of climate change - and I was not the only person who noticed.  
+&emsp; I didn't have the guts to challenge this gentleman in a crowd of 300+ businessmen, (no joke, the male to female ratio was easily 10:1) but a brave man named Piers Duffell did. Piers began by addressing the room and citing the [recent report](http://www.ipcc.ch/pdf/session48/pr_181008_P48_spm_en.pdf) given by the Intergovernmental Panel on Climate Change (IPCC) which concludes that "there is only a dozen years for global warming to be kept at 1.5 degrees Celsius, beyond which even half a degree will significantly worsen the risk of drought, floods, extreme heat and poverty for hundreds of millions of people". Further, he states that Chevron is the 12th largest greenhouse gas emitter. This is where things started to get hairy. One of the mic runners approaches Piers and tries to take the mic away. Piers states, "I paid for a ticket, I'd like to ask a question" and further cites several lawsuits against Chevron that assert the company has acted irresponsibly in the face of climate change. Finally, Piers makes an attempt to appeal to the human side of things, urging everyone to consider the type of world we want to leave for future generations. He begins to ask Mr. Niemeyer what we can expect from Chevron *today* to address these problems, and if he can denounce 'continuing business as usual'. However, before he can finish asking, the audio system is cut in an attempt to silence Piers. However, he projected his voice to the crowd, and finished strongly.  
+&emsp; Mr. Niemeyer did a brilliant job responding, using a whole lot of words that amounted to a whole lot of nothing, and finishing with "I think my time is up" before walking off stage. You can listen to the audio for yourself [here](https://www.hannalindner.com/conservation/WEC/Keynote Audio.m4a).
+
+<center>
+![](/images/conservation/WEC/IMG_2189.JPG){ width=70% }
+</center>
+
+**2.Switching to a plant-based diet is the most effective way to reduce your carbon footprint**  
+Actually, that's not true. The most effective thing you can do is to avoid one round trip transatlantic per year. But how many of us are making multiple transatlantic flights a year? Not too many. So, the next best thing you can do is switch to a plant-based diet, which is equivalent to avoiding a one-way transatlantic flight. I will never tell anyone that you need to be 100\% vegan (though I've found the switch quite fulfilling myself...) because we all have different needs, and extremism can be both unattractive and challenging. But I will always encourage everyone to, at the very least, consider reducing your consumption of animal byproducts - red meat specifically. The agriculture industry represents 24\% of all green house gas emissions (2nd behind electricity at 25\%). If you looked at agriculture as a 'country', it would be the third highest emitter of CO$_2$ behind the US and China at 5 gigatons per year. This [infographic](https://www.1millionwomen.com.au/blog/infographic-how-reducing-consumption-animal-products-benefits-environment/) from 1 Million Women provides info on how the agriculture industry impacts the environment. There are numerous resources on the web that provide guidance on reducing non-vegan consumption.  
+° [10 Easy Ways to Reduce Your Meat Consumption](http://farmsnotfactories.org/articles/10-easy-ways-to-reduce-your-meat-consumption/) from Farms not Factories  
+° [5 Easy Ways to Cut Down on Your Meat Consumption](https://www.onegreenplanet.org/vegan-food/5-easy-ways-to-cut-down-on-your-meat-consumption/) from One Green Planet  
+° Join the [reducetarian movement](https://reducetarian.org/)  
+
+<center>
+![](/images/conservation/WEC/blockisland.jpeg){ width=70% }  
+  
+<font size="2">  
+Block Island Wind Farm Sunrise via [Deepwater Wind](http://dwwind.com/attachment/?projects=block-island-wind-farm#/4)
+</font>
+</center>
+
+**3. Offshore wind farms are super cool**  
+Thankfully, the rest of the conference did not at all resemble the tone of the morning keynote. I attended a breakout panel on regional energy developments which touched on current energy trends throughout the upper east coast. Josh Cohen, director of policy and communications for the [Business Network for Offshore Wind](https://www.offshorewindus.org/) was one of the  panelists. It didn't take him long to convince me that offshore wind is a valuable part of the future energy resource mix. Block Island Wind Farm was the first offshore wind farm in the US; it began operating in December of 2016, located about 4 miles from Block Island, Rhode Island. Since then, the push for more offshore wind projects has been huge, with Connecticut, Delaware, Massachusetts, Maryland, New Jersey, New York and Virginia currently having approved projects, or are permitting for a project. One side effect of the explosive growth is that each subsequent contract price has fallen dramatically, making the price per kilowatt hour of offshore wind competitive with that of fossil fuels. So not only is offshore wind a clean energy option and a source for local jobs, it's becoming more and more of an economically feasible investment. Given the current technology, offshore wind *theoretically* has the potential to generate over 720 terawatt hours/year of energy, which is nearly twice the capacity of all electricity currently generated in the US. The likelihood of this occurring is slim to none, but it is an indicator of the potential utility of offshore wind. If you want to learn more about offshore wind, check out Mr. Cohen's postcast, [Offshore Wind Insider](https://open.spotify.com/show/2jfId7OikLlblIdbxzgo1E).
+
+<center>
+![](/images/conservation/WEC/IMG_6746.JPG){ width=70% }  
+</center>
+
+**4. Policy, policy, policy**  
+You can't talk about energy without talking about policy, whether that's at the federal, state or local level. For example, most states have [Renewable Portfolio Standards](http://www.ncsl.org/research/energy/renewable-portfolio-standards.aspx) (RPS), which require that utilities sell a certain percentage or amount of electricity from renewable resources. Hawai'i has the most aggressive RPS, at 100\% renewable energy of investor-owned utility by 2045; (this doesn't include municipal or electric cooperatives). Specific details of the RPS drive diversification in energy resources. For example, states that are investing in offshore wind are doing so because of standards set in their RPS; New York for example has a offshore wind goal of 2400 megawatts by 2030.  
+&emsp; Across panels, questions of distributed energy resource growth, the optimal resource mix, and accelerating low-carbon options were a common theme. The answer to all of these questions centered around policy. Government grants and credits are considered to be the largest factor in accelerating the adoption of electric energy. In a panel called 'Oil Major's Strategy', the panelists stated that policy (in the form of carbon taxes and pricing), technology, and consumer demands are central in transitioning to alternative energy sources. In other words, our moral agenda alone will not get us to a sustainable world. That being said, if you want to see the energy industry go in a certain direction, exercise your right to speak and let your voice be heard in government - at the polls and beyond.  
+
+<center>
+![](/images/conservation/WEC/IMG_8847.JPG){ width=70% }  
+</center>
+
+**5. The disconnect between science and reality**    
+The science and math have been done for years. We know with relative certainty what needs to happen in order to meet 2 degrees Celsius. There have been several energy mix models proposed that would meet the goals of the Paris Climate Agreement. Yet the pace at which we are making progress does not match with what the science says we need. The thing about a model is that it operates in a vacuum, while we live in reality where there are numerous challenges and obstacles when it comes to advancing the agenda. The energy industry is a finely tuned machine, with more intricacies than I can understand. Alan Thomson, global energy leader of the Boston Consulting Group, believes that realistically, we are headed towards a 3.7 degrees Celsius world, which has dire consequences for how life will look in the future. He suggests that part of the strategy going forward should be preparation for this misfortune. While this all sounds pretty grim, let it serve as a reminder that our choices merit reflection. They make a collective impact - whether that be in how we consume energy, where we spend our dollars, or who we vote into office. 
+
+
+Here are some parting fun facts:  
+<ul>
+<li> If the cement industry were a country, it would rank 4th in emissions. </li>
+<li> We would need 2.5 million drivers to switch to electric cars to equal the annual emissions saved by replacing 1 coal plant with a nuclear plant. </li>
+<li> The shipping goods industry produces as many greenhouse gas emissions as Germany. </li>
+</ul>
