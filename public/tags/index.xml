@@ -57,11 +57,29 @@
     </item>
     
     <item>
+      <title>Climate Justice</title>
+      <link>/tags/climate-justice/</link>
+      <pubDate>Tue, 27 Nov 2018 21:17:12 -0500</pubDate>
+      
+      <guid>/tags/climate-justice/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Emissions</title>
       <link>/tags/emissions/</link>
       <pubDate>Mon, 29 Oct 2018 21:17:12 -0500</pubDate>
       
       <guid>/tags/emissions/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Environmental Justice</title>
+      <link>/tags/environmental-justice/</link>
+      <pubDate>Tue, 27 Nov 2018 21:17:12 -0500</pubDate>
+      
+      <guid>/tags/environmental-justice/</guid>
       <description></description>
     </item>
     
@@ -77,7 +95,7 @@
     <item>
       <title>Hikes</title>
       <link>/tags/hikes/</link>
-      <pubDate>Mon, 15 Oct 2018 21:17:12 -0500</pubDate>
+      <pubDate>Sat, 05 Jan 2019 21:17:12 -0500</pubDate>
       
       <guid>/tags/hikes/</guid>
       <description></description>
@@ -95,7 +113,7 @@
     <item>
       <title>National Parks</title>
       <link>/tags/national-parks/</link>
-      <pubDate>Sun, 14 Oct 2018 21:17:12 -0500</pubDate>
+      <pubDate>Sat, 05 Jan 2019 21:17:12 -0500</pubDate>
       
       <guid>/tags/national-parks/</guid>
       <description></description>
@@ -138,6 +156,15 @@
     </item>
     
     <item>
+      <title>Seattle</title>
+      <link>/tags/seattle/</link>
+      <pubDate>Sat, 05 Jan 2019 21:17:12 -0500</pubDate>
+      
+      <guid>/tags/seattle/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Sharks</title>
       <link>/tags/sharks/</link>
       <pubDate>Fri, 19 Oct 2018 21:17:12 -0500</pubDate>
@@ -170,6 +197,15 @@
       <pubDate>Sun, 14 Oct 2018 21:17:12 -0500</pubDate>
       
       <guid>/tags/utah/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Washington</title>
+      <link>/tags/washington/</link>
+      <pubDate>Sat, 05 Jan 2019 21:17:12 -0500</pubDate>
+      
+      <guid>/tags/washington/</guid>
       <description></description>
     </item>
     
