@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Climbing on Hanna</title>
+    <link>/tags/climbing/</link>
+    <description>Recent content in Climbing on Hanna</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zn-Hans</language>
+    <lastBuildDate>Tue, 15 Jan 2019 21:17:12 -0500</lastBuildDate>
+    
+	<atom:link href="/tags/climbing/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Cape Town, South Africa</title>
+      <link>/travel/cape_town_south_africa/</link>
+      <pubDate>Tue, 15 Jan 2019 21:17:12 -0500</pubDate>
+      
+      <guid>/travel/cape_town_south_africa/</guid>
+      <description>Everybody has a list. A bucket list, travel list, a hit list (jk). Something special holds the top spot, something that makes you more excited and giddy than every other option. For years, South Africa has held that spot on my list. Despite constant eagerness, this trip just wasn’t in the cards until recently, and I think it worked out for the best.</description>
+    </item>
+    
+  </channel>
+</rss>
