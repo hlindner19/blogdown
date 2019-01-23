@@ -88,7 +88,7 @@ It's impossible to include everything, so here is the best of the best.
 [![](/images/travel/Cape_Town/Hanna-13.jpg){ width=44% }](https://www.hannalindner.com/travel/Cape_Town_South_Africa/Hanna-13.jpg)
 [![](/images/travel/Cape_Town/Hanna-24.jpg){ width=48% }](https://www.hannalindner.com/travel/Cape_Town_South_Africa/Hanna-24.jpg)
 [![](/images/travel/Cape_Town/Hanna-18.jpg){ width=41% }](https://www.hannalindner.com/travel/Cape_Town_South_Africa/Hanna-18.jpg)
-<font size="2"> 
+<font size="2.1"> 
 PC: Tristan Firman
 </font>
 </center>
