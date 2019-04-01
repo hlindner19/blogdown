@@ -60,10 +60,10 @@ pygmentsuseclasses         = true
 
 [params]
   faviconfile              = "img/shark-jaws.png"               # from static/
-  avatar                   = "img/IMG_7816a.jpg"             # path to image in static dir e.g img/avatar.png 
+  avatar                   = "img/IMG_8692.jpg"             # path to image in static dir e.g img/avatar.png 
   author                   = "Hanna Lindner"
   description              = ["''Conservation is the preservation of human life''", "- Rob Stewart"]  # appears in the site header when set to a non-empty string
-  welcome_head             = "Welcome to my homepage"
+  welcome_head             = "Välkommen to my homepage"
   welcome_word             = ""
 
   latestpostscount         = 5                             # how many posts to display on the home page
