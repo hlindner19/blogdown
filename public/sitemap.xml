@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/travel/stockholm_sweden/</loc>
+    <lastmod>2019-03-20T21:17:12-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/travel/cape_town_south_africa/</loc>
     <lastmod>2019-01-15T21:17:12-05:00</lastmod>
   </url>
@@ -135,7 +140,7 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2019-01-15T21:17:12-05:00</lastmod>
+    <lastmod>2019-03-20T21:17:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -158,6 +163,12 @@
   </url>
   
   <url>
+    <loc>/tags/museums/</loc>
+    <lastmod>2019-03-20T21:17:12-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tags/national-parks/</loc>
     <lastmod>2019-01-15T21:17:12-05:00</lastmod>
     <priority>0</priority>
@@ -170,8 +181,20 @@
   </url>
   
   <url>
+    <loc>/tags/pastries/</loc>
+    <lastmod>2019-03-20T21:17:12-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tags/rainier/</loc>
     <lastmod>2019-01-04T21:17:12-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/relaxation/</loc>
+    <lastmod>2019-03-20T21:17:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -234,6 +257,12 @@
   </url>
   
   <url>
+    <loc>/tags/sweden/</loc>
+    <lastmod>2019-03-20T21:17:12-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tags/</loc>
     <lastmod>2018-10-29T21:17:12-05:00</lastmod>
     <priority>0</priority>
@@ -241,7 +270,13 @@
   
   <url>
     <loc>/categories/travel/</loc>
-    <lastmod>2019-01-15T21:17:12-05:00</lastmod>
+    <lastmod>2019-03-20T21:17:12-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/urban/</loc>
+    <lastmod>2019-03-20T21:17:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -102,6 +102,15 @@
     </item>
     
     <item>
+      <title>Museums</title>
+      <link>/tags/museums/</link>
+      <pubDate>Wed, 20 Mar 2019 21:17:12 -0500</pubDate>
+      
+      <guid>/tags/museums/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>National Parks</title>
       <link>/tags/national-parks/</link>
       <pubDate>Tue, 15 Jan 2019 21:17:12 -0500</pubDate>
@@ -120,11 +129,29 @@
     </item>
     
     <item>
+      <title>Pastries</title>
+      <link>/tags/pastries/</link>
+      <pubDate>Wed, 20 Mar 2019 21:17:12 -0500</pubDate>
+      
+      <guid>/tags/pastries/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Rainier</title>
       <link>/tags/rainier/</link>
       <pubDate>Fri, 04 Jan 2019 21:17:12 -0500</pubDate>
       
       <guid>/tags/rainier/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Relaxation</title>
+      <link>/tags/relaxation/</link>
+      <pubDate>Wed, 20 Mar 2019 21:17:12 -0500</pubDate>
+      
+      <guid>/tags/relaxation/</guid>
       <description></description>
     </item>
     
@@ -197,6 +224,24 @@
       <pubDate>Fri, 12 Oct 2018 21:17:12 -0500</pubDate>
       
       <guid>/tags/summer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sweden</title>
+      <link>/tags/sweden/</link>
+      <pubDate>Wed, 20 Mar 2019 21:17:12 -0500</pubDate>
+      
+      <guid>/tags/sweden/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Urban</title>
+      <link>/tags/urban/</link>
+      <pubDate>Wed, 20 Mar 2019 21:17:12 -0500</pubDate>
+      
+      <guid>/tags/urban/</guid>
       <description></description>
     </item>
     
