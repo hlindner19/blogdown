@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/conservation/environmentaljustice/environmentaljustice/</loc>
+    <lastmod>2019-06-03T21:17:12-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/travel/stockholm_sweden/</loc>
     <lastmod>2019-03-20T21:17:12-05:00</lastmod>
   </url>
@@ -121,6 +126,12 @@
   </url>
   
   <url>
+    <loc>/tags/climate-justice/</loc>
+    <lastmod>2019-06-03T21:17:12-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tags/climbing/</loc>
     <lastmod>2019-01-15T21:17:12-05:00</lastmod>
     <priority>0</priority>
@@ -128,7 +139,7 @@
   
   <url>
     <loc>/categories/conservation/</loc>
-    <lastmod>2018-10-29T21:17:12-05:00</lastmod>
+    <lastmod>2019-06-03T21:17:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -139,8 +150,14 @@
   </url>
   
   <url>
+    <loc>/tags/environmental-justice/</loc>
+    <lastmod>2019-06-03T21:17:12-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/</loc>
-    <lastmod>2019-03-20T21:17:12-05:00</lastmod>
+    <lastmod>2019-06-03T21:17:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -295,6 +312,12 @@
   <url>
     <loc>/tags/winter/</loc>
     <lastmod>2018-10-13T21:17:12-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/zero-waste/</loc>
+    <lastmod>2019-06-03T21:17:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
