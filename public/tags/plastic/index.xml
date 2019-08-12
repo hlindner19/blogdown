@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Plastic on Hanna</title>
+    <link>/tags/plastic/</link>
+    <description>Recent content in Plastic on Hanna</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zn-Hans</language>
+    <lastBuildDate>Sun, 11 Aug 2019 21:17:12 -0500</lastBuildDate>
+    
+	<atom:link href="/tags/plastic/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Plastic Free July</title>
+      <link>/conservation/plasticfreejuly/plasticfreejuly/</link>
+      <pubDate>Sun, 11 Aug 2019 21:17:12 -0500</pubDate>
+      
+      <guid>/conservation/plasticfreejuly/plasticfreejuly/</guid>
+      <description>A few days into July I caught wind of the ‘Plastic Free July’ movement on Facebook. I’m always eager to partake in anything that contributes to a more sustainable lifestyle, especially if it also serves to educate myself on the larger climate narrative.
+ TL;DR: it was H A R D.</description>
+    </item>
+    
+  </channel>
+</rss>
