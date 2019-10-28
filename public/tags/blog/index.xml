@@ -6,32 +6,18 @@
     <description>Recent content in Blog on Hanna</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zn-Hans</language>
-    <lastBuildDate>Sat, 18 Aug 2018 20:14:59 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 13 Sep 2019 21:17:12 -0500</lastBuildDate>
     
 	<atom:link href="/tags/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Blog养成记(14) 让同页滚动更平滑</title>
-      <link>/blog/2018-08/blog%E5%85%BB%E6%88%90%E8%AE%B014-%E8%AE%A9%E5%90%8C%E9%A1%B5%E6%BB%9A%E5%8A%A8%E6%9B%B4%E5%B9%B3%E6%BB%91/</link>
-      <pubDate>Sat, 18 Aug 2018 20:14:59 +0800</pubDate>
+      <title>The Faroe Islands: a collection of stories and snapshots</title>
+      <link>/travel/faroe_islands_blog/</link>
+      <pubDate>Fri, 13 Sep 2019 21:17:12 -0500</pubDate>
       
-      <guid>/blog/2018-08/blog%E5%85%BB%E6%88%90%E8%AE%B014-%E8%AE%A9%E5%90%8C%E9%A1%B5%E6%BB%9A%E5%8A%A8%E6%9B%B4%E5%B9%B3%E6%BB%91/</guid>
-      <description>&lt;p&gt;上一期说到增加toc侧边栏，但是直接跳转非常突兀，因此特地找了让同页跳转滚动更平滑的插件。
-&amp;lt;code&amp;gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;配置smooth-scroll插件&#34;&gt;配置smooth-scroll插件&lt;/h2&gt;
-
-&lt;p&gt;首先&lt;a href=&#34;https://github.com/kswedberg/jquery-smooth-scroll/releases&#34;&gt;下载smooth-scroll插件&lt;/a&gt;，将其中&lt;code&gt;jquery.smooth-scroll.js&lt;/code&gt;放入&lt;code&gt;js&lt;/code&gt;文件夹中。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Blog养成记(11) 给网站加个小icon</title>
-      <link>/blog/2018-08/blog%E5%85%BB%E6%88%90%E8%AE%B011-%E7%BB%99%E7%BD%91%E7%AB%99%E5%8A%A0%E4%B8%AA%E5%B0%8Ficon/</link>
-      <pubDate>Mon, 13 Aug 2018 00:14:19 +0800</pubDate>
-      
-      <guid>/blog/2018-08/blog%E5%85%BB%E6%88%90%E8%AE%B011-%E7%BB%99%E7%BD%91%E7%AB%99%E5%8A%A0%E4%B8%AA%E5%B0%8Ficon/</guid>
-      <description>这部分其实很简单，只需要在index.html的&amp;lt;head&amp;gt;部分增加以下一句话就好： &amp;lt;link rel=&amp;quot;shortcut icon&amp;quot; href=&amp;quot;/img/aviconfile.ico&amp;quot; &amp;gt; 不过，既然是要做主题，肯定是要用模板变量的么。因此，在模板中的增加以下内容： &amp;lt;!-- Icon --&amp;gt; &amp;lt;link rel=&amp;quot;shortcut icon&amp;quot; {{ if .Site.Params.faviconfile }} href=&amp;quot;/{{ .Site.Params.faviconfile }}&amp;quot; {{ else if.Site.Params.avatar}} href=&amp;quot;/{{ .Site.Params.avatar }}&amp;quot; {{ end }} &amp;gt; 其中faviconfile是在config.toml中定义的网站图标的路径，avatar是在其中定义的个人头像照片的路径。这句话就是如果定义了网站图标就使用网站图标，如果不</description>
+      <guid>/travel/faroe_islands_blog/</guid>
+      <description>Don’t look like a serial killer. Arm out. Thumb up. Higher… Like you know what you’re doing! Ass hole… don’t look at me like that. Nobody is going to stop if your thumb ain’t got enough confidence. That website definitely lied. Wooowww okay just keep driving with all that spare room you got in your car.</description>
     </item>
     
   </channel>

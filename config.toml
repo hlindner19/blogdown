@@ -44,10 +44,10 @@ pygmentsuseclasses         = true
     url                    = "research/"  
 
   [[menu.main]]
-    name                   = "Conservation"
+    name                   = "Climate"
     weight                 = -110
-    identifier             = "conservation"
-    url                    = "conservation/" 
+    identifier             = "climate"
+    url                    = "climate/" 
 
   [[menu.main]]
     name                   = "Travel"
