@@ -33,7 +33,7 @@ The Faroes have long been left off the map, literally... but year after year tou
 There are *options*!  
 
 - By plane: Most routes will require (at least) one layover and will terminate at the only Faroese airport on the island of Vágar. Vágar Airport is serviced by SAS Airlines and Atlantic Airways. Atlantic Airways announced earlier this summer that they are working on nonstop service from New York to the Faroe Islands, but it's unclear when this route will launch. From the east coast of the US I flew EWR -> CPH -> FAE on SAS airlines, a roughly twelve hour journey.  
-- By boat: M/S Norröna is a full service ship operated by the Faroese company, [Smyril Line](www.symrilline.com). Norröna sails between Iceland, the Faroes, and Denmark with the option to bring a vehicle. On board accommodation ranges from full suites to hostel-style dorms. Schedules and prices can be found [here](www.symrilline.com/prices)  
+- By boat: M/S Norröna is a full service ship operated by the Faroese company, [Smyril Line](symrilline.com). Norröna sails between Iceland, the Faroes, and Denmark with the option to bring a vehicle. On board accommodation ranges from full suites to hostel-style dorms. Schedules and prices can be found [here](symrilline.com/prices)  
     - From Iceland: 19 hours  
     - From Denmark: 36 hours  
 
@@ -159,7 +159,7 @@ My itinerary packed as many hikes in as possible, anticipating that Mother Natur
 
   <center>
   [![](/images/travel/Faroe_Islands/IMG_0214.jpg){ width=32% }](https://www.hannalindner.com/travel/Faroe_Islands/IMG_0214.jpg)
-  [![](/images/travel/Faroe_Islands/IMG_1867.jpg){ width=42% }](https://www.hannalindner.com/travel/Faroe_Islands/IMG_.jpg)
+  [![](/images/travel/Faroe_Islands/IMG_1867.jpg){ width=42% }](https://www.hannalindner.com/travel/Faroe_Islands/IMG_1867.jpg)
   [![](/images/travel/Faroe_Islands/IMG_0101.JPG){ width=47% }](https://www.hannalindner.com/travel/Faroe_Islands/IMG_0101.JPG)
   </center>
 - **Kalsoy - Kallur Lighthouse (5km/3mi RT):** It's not the most convenient to get to the tiny northern islands, but the hike to Kallur Lighthouse is one of several attractions that make it worth the journey. From Tórshavn, take bus 400 to Klaksvik, then ferry 56 to Syðradalur and finally bus 506 to Trøllanes. The trail starts at the west end of the tiny village. After the initial ascent, it's a fairly easy hike to the lighthouse. The tricky part is trying to identify the 'right' trail after passing the large cairns. Whether you end up on the real trail, or a sheep trail (as I did), it doesn't matter much as you'll likely be going in the right direction either way. There are some short offshoot trails to explore once you reach the lighthouse - the views from here are pretty spectacular! From here I recommend jumping back on the 506 and stopping in, or spending the night, in the nearby village, Mikladalur.
