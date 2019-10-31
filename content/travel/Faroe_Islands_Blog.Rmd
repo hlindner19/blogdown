@@ -85,6 +85,7 @@ We're sitting... and sitting... maybe we're ahead of schedule? And then an empty
 </center>
 
 ---
+---
 <center>
 <font size="5">
 **COLLECTIONS**
@@ -92,7 +93,7 @@ We're sitting... and sitting... maybe we're ahead of schedule? And then an empty
 </center>
 
 <center>
-  [![](/images/travel/Faroe_Islands/FaroesNarration2.mp4){ width=40% }](https://www.hannalindner.com/travel/Faroe_Islands/FaroesNarration2.mp4)
+  [![](/images/travel/Faroe_Islands/FaroesNarration2.mp4){ width=1000% }](https://www.hannalindner.com/travel/Faroe_Islands/FaroesNarration2.mp4)
 </center>
 <center>
 <font size="2.1"> 
@@ -100,10 +101,10 @@ Narration of my time through the Faroe Islands, featuring my weird self. After s
 </font>
 </center>  
 
-
+---
 
 <center>
-  [![](/images/travel/Faroe_Islands/HC.mp4){width=40% }](https://www.hannalindner.com/travel/Faroe_Islands/HC.mp4)
+  [![](/images/travel/Faroe_Islands/IMG_4743.jpg){width=40% }](https://www.hannalindner.com/travel/Faroe_Islands/IMG_4743.jpg)
 </center>
 <center>
 <font size="2.1"> 
@@ -111,6 +112,7 @@ Seven nights of a happy camper
 </font>
 </center>  
 
+---
 
 <center>
   [![](/images/travel/Faroe_Islands/IMG_4691.JPG){ width=40% }](https://www.hannalindner.com/travel/Faroe_Islands/IMG_4691.JPG)
@@ -121,6 +123,7 @@ It's not always sunshine and butterflies in the Faroes. In fact, that's almost n
 </font>
 </center>  
 
+---
 
 <center>
   [![](/images/travel/Faroe_Islands/IMG_4649.mp4){ width=40% }](https://www.hannalindner.com/travel/Faroe_Islands/IMG_4649.mp4)
@@ -131,6 +134,7 @@ Faces of the Faroes: Hanna versus wind
 </font>
 </center>  
 
+---
 
 <center>
   [![](/images/travel/Faroe_Islands/IMG_4684.mp4){ width=40% }](https://www.hannalindner.com/travel/Faroe_Islands/IMG_4684.mp4)
@@ -141,6 +145,7 @@ A journey to Sørvágsvatn
 </font>
 </center>  
 
+---
 
 <center>
   [![](/images/travel/Faroe_Islands/Gasadalur.mp4){ width=40% }](https://www.hannalindner.com/travel/Faroe_Islands/Gasadalur.mp4)
@@ -151,6 +156,7 @@ A journey to Gásadalur
 </font>
 </center>  
 
+---
 
 <center>
   [![](/images/travel/Faroe_Islands/Mykines.mp4){ width=40% }](https://www.hannalindner.com/travel/Faroe_Islands/Mykines.mp4)
@@ -161,6 +167,7 @@ Against the odds: to Mykines, and back
 </font>
 </center>  
 
+---
 
 <center>
   [![](/images/travel/Faroe_Islands/IMG_4692.JPG){ width=40% }](https://www.hannalindner.com/travel/Faroe_Islands/IMG_4692.JPG)
@@ -171,6 +178,7 @@ Faces of the Faroes: (mostly) early morning tea on the go, because I'm incapable
 </font>
 </center>  
 
+---
 
 <center>
   [![](/images/travel/Faroe_Islands/IMG_4713.mp4){ width=40% }](https://www.hannalindner.com/travel/Faroe_Islands/IMG_4713.mp4)
