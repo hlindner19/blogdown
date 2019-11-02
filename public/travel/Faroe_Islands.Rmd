@@ -3,7 +3,7 @@ title: "The Faroe Islands: guide to backpacking"
 author: "Hanna Lindner"
 date: 2019-09-14T21:17:12-05:00 
 categories: ["Travel"]
-tags: ["Backpacking", "Hikes", "Faroes", "Camping"]
+tags: ["Backpacking", "Hikes", "Faroe Islands", "Camping"]
 img: "images/travel/Faroe_Islands/IMG_2408.jpg"
 summaryLength: 30
 ---

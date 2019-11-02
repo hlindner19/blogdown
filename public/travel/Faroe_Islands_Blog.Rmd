@@ -1,9 +1,9 @@
 ---
 title: "The Faroe Islands: a collection of stories and snapshots"
 author: "Hanna Lindner"
-date: 2019-09-13T21:17:12-05:00
+date: 2019-11-01T21:17:12-05:00
 categories: ["Travel"]
-tags: ["blog", "Faroe Islands"]
+tags: ["Blog", "Faroe Islands"]
 img: "images/travel/Faroe_Islands/IMG_3311.jpg"
 summaryLength: 30
 ---
@@ -93,11 +93,11 @@ We're sitting... and sitting... maybe we're ahead of schedule? And then an empty
 </center>
 
 <center>
-  [![](/images/travel/Faroe_Islands/FaroesNarration2.mp4){ width=1000% }](https://www.hannalindner.com/travel/Faroe_Islands/FaroesNarration2.mp4)
+  [![](/images/travel/Faroe_Islands/FaroesNarration2.mp4){ width=30% }](https://www.hannalindner.com/travel/Faroe_Islands/FaroesNarration2.mp4)
 </center>
 <center>
 <font size="2.1"> 
-Narration of my time through the Faroe Islands, featuring my weird self. After so many days in solitude, for some reason, it seems to be a good idea to start talking to your phone. 
+The result of days in relative solitude... it seems to be a good idea to start talking to your phone. Narration of the journey through the Islands, featuring my weird self!
 </font>
 </center>  
 
@@ -108,7 +108,7 @@ Narration of my time through the Faroe Islands, featuring my weird self. After s
 </center>
 <center>
 <font size="2.1"> 
-Seven nights of a happy camper
+Happy, tired, awake-in-the-middle-of-the-night-thanks-to-ungodly-wind camper
 </font>
 </center>  
 
@@ -174,7 +174,7 @@ Against the odds: to Mykines, and back
 </center>
 <center>
 <font size="2.1"> 
-Faces of the Faroes: (mostly) early morning tea on the go, because I'm incapable of budgeting time
+Faces of the Faroes: (mostly) early morning tea on the go, because I'm incapable of budgeting time!
 </font>
 </center>  
 
@@ -189,5 +189,8 @@ Faces of the Faroes: the selfies that didn't make the cut
 </font>
 </center> 
 
+---
 
 **I want to acknowledge the past, present, and future generations of the Native Faroese people that originally settled in 9 A.D. It is their willingness to share their land, culture and kindness that make trips like this possible. Ultimately it is the people and their spirit that we remember and carry on to the next destination. Takk fyri!**
+
+---
