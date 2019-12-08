@@ -31,7 +31,7 @@ By examining the median time (in hours) between pings by shark, we can get a sen
 Testing the hypothesis:  
  - $H_0: \rho=0$  
  - $H_1: \rho\neq 0$  
-we can answer whether there is a significant trend between the two variables using the `cor.test` function with option `method='spearm`. $\hat{\rho}=-0.65$ and the test returns a p-value < 0.05 indicating a significant negative trend:  as the frequency of pings increases, the median time between pings decreases. One plausible explanation is that organisms with a large frequency of pings are hanging around receivers for long stretches of time, decreasing the time between pings.
+we can answer whether there is a significant trend between the two variables using the `cor.test` function with option `method='spearm'`. $\hat{\rho}=-0.65$ and the test returns a p-value < 0.05 indicating a significant negative trend:  as the frequency of pings increases, the median time between pings decreases. One plausible explanation is that organisms with a large frequency of pings are hanging around receivers for long stretches of time, decreasing the time between pings.
 
 ```{r, echo=F, warning=F, comment=F, message=F}
 tssort<-tsdat[with(tsdat, order(collection, date)), ]

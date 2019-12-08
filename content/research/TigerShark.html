@@ -19,7 +19,7 @@ FALSE    5.00   28.25   56.50  152.96  203.75  758.00</code></pre>
 <p>Testing the hypothesis:<br />
 - <span class="math inline">\(H_0: \rho=0\)</span><br />
 - <span class="math inline">\(H_1: \rho\neq 0\)</span><br />
-we can answer whether there is a significant trend between the two variables using the <code>cor.test</code> function with option <code>method='spearm</code>. <span class="math inline">\(\hat{\rho}=-0.65\)</span> and the test returns a p-value &lt; 0.05 indicating a significant negative trend: as the frequency of pings increases, the median time between pings decreases. One plausible explanation is that organisms with a large frequency of pings are hanging around receivers for long stretches of time, decreasing the time between pings.</p>
+we can answer whether there is a significant trend between the two variables using the <code>cor.test</code> function with option <code>method='spearm'</code>. <span class="math inline">\(\hat{\rho}=-0.65\)</span> and the test returns a p-value &lt; 0.05 indicating a significant negative trend: as the frequency of pings increases, the median time between pings decreases. One plausible explanation is that organisms with a large frequency of pings are hanging around receivers for long stretches of time, decreasing the time between pings.</p>
 <pre><code>FALSE    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
 FALSE    0.00    1.64    6.56   27.23   16.66 3159.25</code></pre>
 <p><img src="/research/TigerShark_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
