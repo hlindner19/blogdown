@@ -6,10 +6,19 @@
     <description>Recent content on Hanna</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zn-Hans</language>
-    <lastBuildDate>Fri, 01 Nov 2019 21:17:12 -0500</lastBuildDate>
+    <lastBuildDate>Fri, 15 Nov 2019 21:17:12 -0500</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>A descriptive study of Tiger Sharks in Hawaii</title>
+      <link>/research/tigershark/</link>
+      <pubDate>Fri, 15 Nov 2019 21:17:12 -0500</pubDate>
+      
+      <guid>/research/tigershark/</guid>
+      <description>In this brief descriptive analysis, I use data from the Pacific Islands Ocean Observing System (PacIOOS) to characterize tagged Tiger Sharks that roam the Pacific Hawaiian waters, specifically around the islands of Maui and Oahu. The dataset contains 46 different tagged sharks, spanning 7036 observations which represent the number of times the 46 tags registered with 27 acoustic receivers around placed around the islands.</description>
+    </item>
     
     <item>
       <title>The Faroe Islands: a collection of stories and snapshots</title>

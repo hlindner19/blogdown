@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="zn-Hans">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1" />
+  <meta name="author" content="Hanna Lindner">
+  <meta name="description" content="In this brief descriptive analysis, I use data from the Pacific Islands Ocean Observing System (PacIOOS) to characterize tagged Tiger Sharks that roam the Pacific Hawaiian waters, specifically around the islands of Maui and Oahu. The dataset contains 46 different tagged sharks, spanning 7036 observations which represent the number of times the 46 tags registered with 27 acoustic receivers around placed around the islands.">
+  
+  <meta property="og:title" content="A descriptive study of Tiger Sharks in Hawaii" />
+<meta property="og:description" content="In this brief descriptive analysis, I use data from the Pacific Islands Ocean Observing System (PacIOOS) to characterize tagged Tiger Sharks that roam the Pacific Hawaiian waters, specifically around the islands of Maui and Oahu. The dataset contains 46 different tagged sharks, spanning 7036 observations which represent the number of times the 46 tags registered with 27 acoustic receivers around placed around the islands." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/research/tigershark/" /><meta property="article:published_time" content="2019-11-15T21:17:12-05:00"/>
+<meta property="article:modified_time" content="2019-11-15T21:17:12-05:00"/>
+
+
+  <title>
+  
+       A descriptive study of Tiger Sharks in Hawaii | Hanna 
+  
+  </title>
+
+  <link rel="canonical" href="/research/tigershark/">
+
+  
+  
+
+  
+  <link href="/css/vendors-extensions/fontawesome/all.min.css" rel="stylesheet">
+
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Ubuntu+Mono:400,400i,700,700i|Raleway:300,400,500,600">
+  <link href="/css/font.css" rel="stylesheet"> 
+    
+  
+  <link href="/css/vendors/bootstrap4/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/vendors-extensions/mdb/mdb.min.css" rel="stylesheet"> 
+  <link href="/css/vendors/mdb/style.min.css" rel="stylesheet"> 
+  <link href="/css/main.css" rel="stylesheet">
+
+
+  
+  <link rel="shortcut icon"
+  
+      href="/img/shark-jaws.png"
+  
+  >
+
+
+  
+  
+
+  <style type="text/css">
+      @media (min-width: 800px) and (max-width: 850px) {
+              .navbar:not(.top-nav-collapse) {
+                  background: #1C2331!important;
+              }
+          }
+  </style>
+
+
+  
+    
+    <link rel="stylesheet" href="/js/vendors/katex/katex.min.css">
+  
+  
+
+  
+    
+    <link rel="stylesheet" href="/css/vendors/highlight/github-gist.css">
+  
+
+</head>
+
+  <body class="bg-light" data-spy="scroll" data-target="#page-scrollspy" data-offset="90">
+  
+    
+    
+
+    
+      
+
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+    <div class="container">
+
+      
+      <a class="navbar-brand" href="/">
+          
+        <img class="avatar" src="/img/shark-jaws.png" style="width: 40px!important;height: auto;"  class="d-inline-block align-top" alt="" >
+        
+        <strong> Hanna Lindner</strong>
+      </a>
+
+      
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        
+        <ul class="navbar-nav mr-auto ">
+          <li class="nav-item ">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+             
+            <li class="nav-item ">
+              <a class="nav-link" href="/about/" >About  </a>
+            </li>
+          
+             
+            <li class="nav-item ">
+              <a class="nav-link" href="/research/" >Research  </a>
+            </li>
+          
+             
+            <li class="nav-item ">
+              <a class="nav-link" href="/climate/" >Climate  </a>
+            </li>
+          
+             
+            <li class="nav-item ">
+              <a class="nav-link" href="/travel/" >Travel  </a>
+            </li>
+          
+          
+        </ul>
+
+      </div>
+
+    </div>
+  </nav>
+  
+ 
+      
+ 
+
+
+
+
+
+
+<div id="site-header" class="carousel slide carousel-fade" data-ride="carousel" style="height: 18rem;" >  
+
+  
+  
+  
+
+  
+  <div class="carousel-inner" role="listbox">
+    
+      
+
+        
+        <div class="carousel-item active">
+          <div class="view" style="background-image: url('/img/header-slides/IMG_0001.JPG'); background-repeat: no-repeat; background-size: cover;">
+
+            
+            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+              
+              
+              
+
+            </div>
+            
+
+          </div>
+        </div>
+        
+      
+    
+      
+
+        
+        <div class="carousel-item">
+          <div class="view" style="background-image: url('/img/header-slides//IMG_0002.JPG'); background-repeat: no-repeat; background-size: cover;">
+
+            
+            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            
+
+            </div>
+            
+
+          </div>
+        </div>
+        
+      
+    
+      
+
+        
+        <div class="carousel-item">
+          <div class="view" style="background-image: url('/img/header-slides//IMG_0003.JPG'); background-repeat: no-repeat; background-size: cover;">
+
+            
+            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            
+
+            </div>
+            
+
+          </div>
+        </div>
+        
+      
+    
+      
+
+        
+        <div class="carousel-item">
+          <div class="view" style="background-image: url('/img/header-slides//IMG_0004.JPG'); background-repeat: no-repeat; background-size: cover;">
+
+            
+            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            
+
+            </div>
+            
+
+          </div>
+        </div>
+        
+      
+    
+      
+
+        
+        <div class="carousel-item">
+          <div class="view" style="background-image: url('/img/header-slides//IMG_0016.JPG'); background-repeat: no-repeat; background-size: cover;">
+
+            
+            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            
+
+            </div>
+            
+
+          </div>
+        </div>
+        
+      
+    
+      
+
+        
+        <div class="carousel-item">
+          <div class="view" style="background-image: url('/img/header-slides//IMG_0063.JPG'); background-repeat: no-repeat; background-size: cover;">
+
+            
+            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            
+
+            </div>
+            
+
+          </div>
+        </div>
+        
+      
+    
+      
+
+        
+        <div class="carousel-item">
+          <div class="view" style="background-image: url('/img/header-slides//IMG_0218.JPG'); background-repeat: no-repeat; background-size: cover;">
+
+            
+            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            
+
+            </div>
+            
+
+          </div>
+        </div>
+        
+      
+    
+
+  
+  </div>
+  
+
+  
+  <div class="carousel-content text-center white-text wow fadeIn">
+    <div class="row mx-0 headfont mt-3 pt-4">
+      
+      <div class="col-12 col-sm-5 align-middle">
+        <a href="/">
+          
+            <img class="pull-right avatar avatar-md" src="/img/IMG_1635.JPG" alt="" >
+          
+        </a>
+      </div>
+      
+      <div class="col-12 col-sm-7 text-left pl-2">
+        <a href="/">
+          <h1 class="mb-2 h1" style="font-weight: 300;" >
+            <strong>Hanna</strong>
+          </h1>
+        </a>
+        
+
+             
+        <div class="mt-2" style="font-size: 1rem; color: white;">
+            
+            
+              <a href="//linkedin.com/in/lindnerhanna/" target="_blank" rel="noopener"><i class="fab fa-linkedin pr-1" aria-hidden="true"></i></a>
+            
+
+            
+              <a href="//facebook.com/H.Lindner" target="_blank" rel="noopener"><i class="fab fa-facebook pr-1" aria-hidden="true"></i></a>
+            
+
+            
+
+            
+
+            
+    
+            
+    
+        
+            
+                <a href="mailto:hlindner@pennmedicine.upenn.edu"><i class="far fa-envelope-open pr-1" aria-hidden="true"></i></a>
+            
+    
+            
+
+            
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  
+  
+  
+
+</div>
+  
+    
+
+    
+  
+  <main class="post-main-wrapper">
+    
+    
+    <div class="row">
+
+      
+
+      
+      <div class="container pr-5">
+      
+
+        
+        <div class="z-depth-1  post-wrapper white-bg single-post">
+
+          <div class="post-header text-center" >
+  <ul class="post-meta li-x">
+    
+      
+        <li><a href="/categories/research"><i class="fas fa-folder-open pr-1" aria-hidden="true"></i> Research </a></li>
+      
+    
+    
+  </ul>
+
+  <div class="px-4 post-heading">A descriptive study of Tiger Sharks in Hawaii</div>
+
+  <ul class="post-meta li-x mt-1">
+    
+      <li>Nov 15, 2019</li>
+    
+
+    
+      <li class="middot"></li>
+      <li>6 minutes read</li>
+    
+  </ul>
+  
+    <div class="view">
+      <img src="/images/research/TigerShark/Shark_new_tag_Mark_Royer.jpg" />
+    </div>
+  
+
+</div>
+
+
+          <div class="post-content markdown">
+            <p>In this brief descriptive analysis, I use data from the Pacific Islands Ocean Observing System (PacIOOS) to characterize tagged Tiger Sharks that roam the Pacific Hawaiian waters, specifically around the islands of Maui and Oahu. The dataset contains 46 different tagged sharks, spanning 7036 observations which represent the number of times the 46 tags registered with 27 acoustic receivers around placed around the islands. This dataset was aggregated from multiple survey periods.</p>
+<p>To get a sense of how often the tagged sharks are swimming close enough to the receivers to register ‘pings’, we plot the frequency of observations by shark. Observations range from 5 to 758 (standard deviation = 182), with a median of 57. The wide spread in frequency of observations could be due to a variety of factors including, but not limited to: differing times under observation, a tendency to feed regularly near a receiver site, and the distribution of receiver sites.</p>
+<pre><code>FALSE    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+FALSE    5.00   28.25   56.50  152.96  203.75  758.00</code></pre>
+<p><img src="/research/TigerShark_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<p>By examining the median time (in hours) between pings by shark, we can get a sense of whether certain organisms tended to spend more time around receivers than others. Median time between pings (rather than mean) was selected due to the highly skewed distribution. Additionally, we can calculate the Spearman correlation between frequency of pings and median time between pings to further understand this relationship. Spearman’s correlation is a rank-based correlation that is used when the data vectors are not normally distributed.</p>
+<p>Testing the hypothesis:<br />
+- <span class="math inline">\(H_0: \rho=0\)</span><br />
+- <span class="math inline">\(H_1: \rho\neq 0\)</span><br />
+we can answer whether there is a significant trend between the two variables using the <code>cor.test</code> function with option <code>method='spearm</code>. <span class="math inline">\(\hat{\rho}=-0.65\)</span> and the test returns a p-value &lt; 0.05 indicating a significant negative trend: as the frequency of pings increases, the median time between pings decreases. One plausible explanation is that organisms with a large frequency of pings are hanging around receivers for long stretches of time, decreasing the time between pings.</p>
+<pre><code>FALSE    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+FALSE    0.00    1.64    6.56   27.23   16.66 3159.25</code></pre>
+<p><img src="/research/TigerShark_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<p>A subset of the data contains information on sex and length. After excluding those without the additional covariate information, we are left with 27 females and 7 males. It is well known that female sharks grow longer than males to accomodate for pups. This holds true, with females measuring 12.4 ft (3.8 m) on average, compared to the average length of males: 11.3 ft (3.4 m).</p>
+<pre><code>##   sex length_ft Freq
+## 1   0     11.29    7
+## 2   1     12.37   27</code></pre>
+<p><img src="/research/TigerShark_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<p>Using length and sex we can also classify the organisms as sexually mature or not. Males reach sexual maturity at 2.3-2.9 m, while females mature at 2.5-3.5 m. To categorize the organisms, I used the midpoint of these ranges. All of the tiger sharks, except one female are considered sexually mature by these cut points.</p>
+<p>We can reexamine the above initial features of frequency of pings and time between pings stratifying by sex. Unfortunately, conducting inference to look for significant differences between the two groups is ill-advised due to the small sample sizes. The median number of pings differs substantially by sex: 205 for males vs 94 for females. Note that the male group may be influenced by having a small sample size, and may not be representative of what the median would be under a larger sample. Both of these are greater than the overall median from the original sample: 57 pings.</p>
+<p><img src="/research/TigerShark_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<p>Finally, we reexamine the median time between pings (in hours) by sex. Prior to subsetting and stratification, the overall median time between pings was 6.6 hours. Afterwards, it is 9.3 hours for males and 12.7 for females.</p>
+<p><img src="/research/TigerShark_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<p>The last, and most exciting part to look at is the actual ping locations which shows where the tiger sharks are travelling and how often they are spending time off the shores of the islands. To do this, I’ve built a Shiny app utilizing Leaflet (for the first time… so please excuse it’s lack of grand sophistication!) to show the where each shark was pinging while under study. Unfortunately it can’t be integrated into the webpage, but click <a href="https:/hannalindner.shinyapps.io/Shiny/">here</a> or on the image below to be redirected to the app. (And if anyone knows why my map marker of a shark head works on desktop browsers but not mobile browsers, please for the love of god, help me).</p>
+<center>
+<a href="https://hannalindner.shinyapps.io/Shiny/"><img src="/images/research/TigerShark/MapSC.png" style="width:100.0%" /></a>
+</center>
+<center>
+<font size="5">
+<strong>SO WHAT’S IT MATTER?!</strong>
+</font>
+</center>
+<p>Collecting data like this matters a lot, actually. Sharks need to be protected from humans, and on some level, humans need to be ‘protected’ from sharks. The former is a policy issue, while the latter is an education issue. Knowing where sharks go tells us which areas demand protection, in terms of restricting commercial and non-commercial fishing, and ensuring non-polluted waters so the entire ecosystem can thrive. This is especially important in areas where sexually mature sharks are present because it could mean protection for birthing sites. (All tiger sharks with sex/length information except one were categorized as sexually mature in the present analysis). Beaches that correspond to Tiger Shark hot-spots can be signposted with warnings of heavy shark presence; making it a well-informed ‘swim at your own risk’ situation. The data shows that Tiger Sharks are frequently present in the shallow coastal waters surrounding the Hawaiian Islands; some may find it remarkable, that all things considered, that there are so few incidents.</p>
+<p>“In the Hawaiian Islands, since 1828, there have been 116 confirmed shark attacks and only 8 confirmed shark attack fatalities. For Hawaii, that averages out to a shark attack every 1.59 years, and a fatality approximately every 23 years” (<a href="https://www.floridamuseum.ufl.edu/shark-attacks/maps/na/usa/usa-all/">Florida Museum of Natural History</a>). Yet more proof that sharks do not predate on humans, and it’s unfair to label them as attackers. Ultimately they are insanely evolved and intelligent, and occasionally, investigate humans that look strikingly like seals at times.</p>
+<p>As of August 2018, the IUCN lists the Tiger Shark as near-threatened, with a declining population. Guessing how many of anything exists in the world’s oceans is an impossible feat, but it is clear that sharks (in general) are being exploited at unsustainable levels - and for ludicrous things like shark fin soup and the oil from their livers, not to mention insurmountable death due to by-catch. Similarly, it’s difficult to know exactly how much damage we are doing, but most estimates say humans kill 100-150 million sharks each year. That’s direct damage - we mustn’t forget to factor in the impacts of human-induced climate change (we’ve made the oceans up to 30% more acidic)… Demolish the top of an ecosystem, and the implications are not small.</p>
+<p>Read more <a href="https://www.sharkwater.com/help-save-sharks/why-sharks-matter/">here</a>.</p>
+<hr />
+<center>
+<font size="5">
+<strong>References</strong>
+</font>
+</center>
+<ul>
+<li><a href="http://www.pacioos.hawaii.edu/wp-content/uploads/2016/05/tiger_shark_report_2016.pdf">On the original study</a></li>
+<li><a href="https://marinebio.org/species/tiger-sharks/galeocerdo-cuvier/">On sexual maturity of Tiger Sharks</a></li>
+<li><a href="https://www.floridamuseum.ufl.edu/shark-attacks/maps/na/usa/usa-all/">On confirmed unprovoked ‘attacks’ by state</a></li>
+<li><a href="https://ocean.si.edu/ocean-life/invertebrates/ocean-acidification">On ocean acidification</a></li>
+</ul>
+
+          </div>
+                            
+
+          
+          <div class="row">
+            <div class="col-md-8">
+            
+              <div class="mb-5">
+                
+<div class="li-x div-x post-meta">
+  <li class="pr-0"><a href="/tags/"><i class="fas fa-tags"></i></a></li>
+  <div class="tags-sm">
+    
+      <li><a href="/tags/sharks" role="button">Sharks </a></li>
+      
+    
+  </div>
+</div>
+              </div>
+            
+            </div>
+            
+          </div>
+          
+          
+          <div id="disqus_thread"></div>
+<script>
+
+
+
+
+
+(function() { 
+var d = document, s = d.createElement('script');
+s.src = 'https://ampullae-of-lorenzini.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+          
+          <div class="row pt-3">
+            <div class="col-md-6">
+              
+                <a href=/research/checkbacklater/ class="post-meta">Previous
+                  <div class="pt-2 pb-5 d-flex">
+                    <i class="fas fa-angle-left text-grey font-weight-bold mr-2 active-color"></i>
+                    <span> </span>
+                  </div>
+                </a>
+              
+            </div>
+            
+            <div class="col-md-6 text-right" >
+              
+            </div>
+          </div>
+
+          
+
+        </div>
+        
+
+      </div>
+      
+
+      
+
+    </div>
+    
+
+
+  </main>
+  
+
+
+    
+    
+
+<footer class="page-footer text-center font-small mt-4 wow fadeIn">
+
+
+  
+  <div class="pb-2 mt-5 pt-5">
+    
+    
+      <a href="//linkedin.com/in/lindnerhanna/" target="_blank" rel="noopener"><i class="fab fa-linkedin-in mr-3" aria-hidden="true"></i></a>
+    
+
+    
+      <a href="//facebook.com/H.Lindner" target="_blank" rel="noopener"><i class="fab fa-facebook-f mr-3" aria-hidden="true"></i></a>
+    
+
+    
+
+    
+
+    
+
+    
+
+
+    
+        <a href="mailto:hlindner@pennmedicine.upenn.edu"><i class="far fa-envelope-open mr-3" aria-hidden="true"></i></a>
+    
+
+    
+
+    
+
+  </div>
+  
+
+  
+  <div class="copyright py-4">
+    
+    <span>  2016 - 2019 &copy; | Theme <a href='https://github.com/orianna-zzo/AllinOne' target="_blank">AllinOne</a> by <a href='https://github.com/orianna-zzo' target="_blank">Orianna</a>  </span>
+  </div>
+  
+
+</footer>
+
+
+    
+
+
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="/js/vendors/jquery/jquery.smooth-scroll.min.js"></script>
+
+
+
+<script type="text/javascript" src="/js/vendors/popper.min.js"></script>
+<script type="text/javascript" src="/js/vendors/holder.min.js"></script>
+<script type="text/javascript" src="/js/vendors-extensions/bootstrap4/bootstrap.js" ></script>
+
+<script type="text/javascript" src="/js/vendors/mdb/mdb.min.js"></script>
+
+<script type="text/javascript" src="/js/main.js"></script>
+
+
+
+  
+  <script src="/js/vendors/highlight.pack.js"> </script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+ 
+  <script src="/js/vendors/katex/katex.min.js"> </script>
+  <script src="/js/vendors/katex/contrib/auto-render.min.js"></script>
+
+  <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          renderMathInElement(document.body);
+      });
+  </script>
+
+
+
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-127385272-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+<script type="text/javascript">
+  
+  new WOW().init();
+</script>
+
+
+
+
+  </body>
+</html>

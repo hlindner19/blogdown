@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/research/tigershark/</loc>
+    <lastmod>2019-11-15T21:17:12-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/travel/faroe_islands_blog/</loc>
     <lastmod>2019-11-01T21:17:12-05:00</lastmod>
   </url>
@@ -190,7 +195,7 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2019-11-01T21:17:12-05:00</lastmod>
+    <lastmod>2019-11-15T21:17:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -256,6 +261,7 @@
   
   <url>
     <loc>/categories/research/</loc>
+    <lastmod>2019-11-15T21:17:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -290,7 +296,7 @@
   
   <url>
     <loc>/tags/sharks/</loc>
-    <lastmod>2019-01-15T21:17:12-05:00</lastmod>
+    <lastmod>2019-11-15T21:17:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   

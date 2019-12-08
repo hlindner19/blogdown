@@ -1,0 +1,148 @@
+---
+title: "A descriptive study of Tiger Sharks in Hawaii"
+author: "Hanna Lindner"
+date: 2019-11-15T21:17:12-05:00
+categories: ["Research"]
+tags: ["Sharks"]
+img: "images/research/TigerShark/Shark_new_tag_Mark_Royer.jpg"
+summaryLength: 30
+---
+
+In this brief descriptive analysis, I use data from the Pacific Islands Ocean Observing System (PacIOOS) to characterize tagged Tiger Sharks that roam the Pacific Hawaiian waters, specifically around the islands of Maui and Oahu. The dataset contains 46 different tagged sharks, spanning 7036 observations which represent the number of times the 46 tags registered with 27 acoustic receivers around placed around the islands. This dataset was aggregated from multiple survey periods.
+
+To get a sense of how often the tagged sharks are swimming close enough to the receivers to register 'pings', we plot the frequency of observations by shark. Observations range from 5 to 758 (standard deviation = 182), with a median of 57. The wide spread in frequency of observations could be due to a variety of factors including, but not limited to: differing times under observation, a tendency to feed regularly near a receiver site, and the distribution of receiver sites.   
+
+```{r, echo=F, warning=F, comment=F, message=F}
+library(readr)
+tsdat <- read_csv("~/Documents/Independent Projects/HI_PACIOOS_Tiger_Shark_Tracking/clean_data2.txt")
+
+library(shiny); library(leaflet); library(ggplot2)
+t1<-data.frame(table(tsdat$collection))
+colnames(t1)<-c('shark', 'Freq')
+round(summary(t1$Freq), digits=2)
+#make histogram of frequency of pings
+ggplot(t1, aes(x=shark, y=Freq)) + geom_bar(stat='identity') + 
+  theme(axis.text.x = element_text(angle = 90, hjust = 1), panel.grid.minor = element_blank(), panel.grid.major.x = element_blank(), panel.background = element_rect(colour = "white", fill='white'), panel.grid.major.y = element_line(color='grey90')) + 
+  labs(title='Frequency of Pings by Shark', x='Shark', y='Frequency') + ylim(0, 800)
+```
+
+By examining the median time (in hours) between pings by shark, we can get a sense of whether certain organisms tended to spend more time around receivers than others. Median time between pings (rather than mean) was selected due to the highly skewed distribution. Additionally, we can calculate the Spearman correlation between frequency of pings and median time between pings to further understand this relationship. Spearman's correlation is a rank-based correlation that is used when the data vectors are not normally distributed.
+
+Testing the hypothesis:  
+ - $H_0: \rho=0$  
+ - $H_1: \rho\neq 0$  
+we can answer whether there is a significant trend between the two variables using the `cor.test` function with option `method='spearm`. $\hat{\rho}=-0.65$ and the test returns a p-value < 0.05 indicating a significant negative trend:  as the frequency of pings increases, the median time between pings decreases. One plausible explanation is that organisms with a large frequency of pings are hanging around receivers for long stretches of time, decreasing the time between pings.
+
+```{r, echo=F, warning=F, comment=F, message=F}
+tssort<-tsdat[with(tsdat, order(collection, date)), ]
+t2<-NULL
+for(i in 1:nrow(tssort)){
+  time.diff<-tssort$date[i+1]-tssort$date[i] #chooses time units automatically
+  shark<-tssort$collection[i+1]
+  sing<-cbind(time.diff, shark)
+  t2<-rbind(t2, sing)
+}
+t2<-cbind(t2, difftime(tssort$date[2:7036], tssort$date[1:7035], units = 'hours')) #makes sure time units are all in hours
+t2<-t2[1:7035,]
+t2<-data.frame(t2)
+colnames(t2)<-c('timediff_auto', 'shark', 'timediff')
+t2$timediff<-round(t2$timediff, digits = 2)
+#have to remove the rows that correspond to 2 diff sharks
+cutpoints<-NULL
+for(i in 1:45){
+  s1<-sum(t1$Freq[1:i])
+  cutpoints<-c(cutpoints, s1)
+}
+t2a<-t2[-cutpoints,]
+#average time in hours between pings across all sharks
+#mean(t2a$timediff)
+round(summary(t2a$timediff), digits = 2)
+#by shark (median, not mean)
+median_ping<-aggregate(timediff~shark, median, data=t2a)
+#bar chart 
+ggplot(median_ping, aes(x=t1$shark, y=timediff)) + geom_hline(yintercept=median(t2a$timediff), color='red') + geom_bar(stat='identity') + 
+  theme(axis.text.x = element_text(angle = 90, hjust = 1), panel.grid.minor = element_blank(), panel.grid.major.x = element_blank(), panel.background = element_rect(colour = "white", fill='white'), panel.grid.major.y = element_line(color='grey90')) + 
+  labs(title='Median time between pings by shark \n Overall median in red', x='Shark', y='Hours') 
+```
+
+A subset of the data contains information on sex and length. After excluding those without the additional covariate information, we are left with 27 females and 7 males. It is well known that female sharks grow longer than males to accomodate for pups. This holds true, with females measuring 12.4 ft (3.8 m) on average, compared to the average length of males: 11.3 ft (3.4 m).
+```{r, echo=F}
+#a subset of data has sex and length data. Needs to be imported manually -_-
+m1<-matrix(c(145989, 144555, 144554, 133365:133373, 133361:133363, 132062, 122984, 81182, 144556, 137077:137079, 137074, 137073, 137070, 134780, 132063, 122985, 132069, 160383, 160382,160379, 160378, 160375, 160376, 137075, 132064, 132060, 122988), ncol=1)
+m1a<-subset(m1, m1 %in% unique(tssort$collection))
+#sex, length (ft, m)
+##males=0, females=1
+m1b<-matrix(c(1, 11.6, 3.5, 1, 9, 2.7, 1, 10.6, 3.2, 0, 10.6, 3.2, 1, 10.9, 3.3, 1, 12.7, 3.9, 1, 13.4, 4.1, 0, 9.3, 2.8, 1, 14.2, 4.3, 1, 12.2, 3.7, 1, 12.3, 3.7, 1, 12.9, 3.9, 1, 12.3, 3.7, 1, 13.5, 4.1,
+              1, 12.5, 3.8, 1, 12.4, 3.8, 1, 14.7, 4.5, 0, 13.4, 4.1, 0, 9.8, 3, 0, 11.9, 3.6, 1, 13.6, 4.1, 1, 12.4, 3.8, 1, 10.6, 3.2, 1, 12.6, 3.8, 0, 12.1, 3.7, 1, 10.2, 3.1, 1, 10.8, 3.3, 1, 14.2, 4.3,
+              1, 13.2, 4, 1, 13, 4, 1, 11.7, 3.6, 1, 13.8, 4.2, 0, 11.9, 3.6, 1, 12.8, 3.9), ncol = 3, byrow = T)
+
+sex_length<-cbind(m1a, m1b)
+sex_length<-data.frame(sex_length)
+colnames(sex_length)<-c('shark', 'sex', 'length_ft', 'length_m')
+
+#sex analysis
+sex_tab<-table(sex_length[,2])
+sex_length_tab<-aggregate(length_ft~sex, data=sex_length, mean)
+sex_length_tab<-cbind(sex_length_tab, sex_tab)
+round((sex_length_tab<-sex_length_tab[,-3]), digits=2)
+t3<-merge(t1, sex_length, by='shark')
+#order by sex
+t3sort<-t3[with(t3, order(sex)), ]
+ggplot(t3, aes(x=factor(shark, level=t3sort$shark), y=length_ft, fill=as.factor(sex))) + geom_bar(stat='identity') +  
+  scale_fill_manual('Sex', values = c('0'="#0072B2", '1'="#CC79A7"), labels=c('Male', 'Female')) +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1), panel.grid.minor = element_blank(), panel.grid.major.x = element_blank(), panel.background = element_rect(colour = "white", fill='white'), panel.grid.major.y = element_line(color='grey90')) + 
+  labs(title='Length by sex \n Stratified average length in black', x='Shark', y='Length (feet)') + ylim(0, 20) + 
+  geom_errorbarh(aes(xmin=1, xmax=7, y=11.285, height=0)) + geom_errorbarh(aes(xmin=8, xmax=34, y=12.374, height=0))
+```
+
+Using length and sex we can also classify the organisms as sexually mature or not. Males reach sexual maturity at 2.3-2.9 m, while females mature at 2.5-3.5 m. To categorize the organisms, I used the midpoint of these ranges. All of the tiger sharks, except one female are considered sexually mature by these cut points.
+
+We can reexamine the above initial features of frequency of pings and time between pings stratifying by sex. Unfortunately, conducting inference to look for significant differences between the two groups is ill-advised due to the small sample sizes. The median number of pings differs substantially by sex: 205 for males vs 94 for females. Note that the male group may be influenced by having a small sample size, and may not be representative of what the median would be under a larger sample. Both of these are greater than the overall median from the original sample: 57 pings.
+
+```{r, echo=F}
+ggplot(t3sort, aes(x=factor(shark, level=t3sort$shark), y=Freq, fill=as.factor(sex))) + geom_bar(stat='identity') + scale_fill_manual('Sex', values = c('0'="#0072B2", '1'="#CC79A7"), labels=c('Male', 'Female')) +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1), panel.grid.minor = element_blank(), panel.grid.major.x = element_blank(), panel.background = element_rect(colour = "white", fill='white'), panel.grid.major.y = element_line(color='grey90')) + 
+  labs(title='Frequency of Pings by Shark \n Stratified median in black', x='Shark', y='Frequency') + ylim(0, 800) +
+  geom_errorbarh(aes(xmin=1, xmax=7, y=205, height=0)) + geom_errorbarh(aes(xmin=8, xmax=34, y=94, height=0))
+```
+
+Finally, we reexamine the median time between pings (in hours) by sex. Prior to subsetting and stratification, the overall median time between pings was 6.6 hours. Afterwards, it is 9.3 hours for males and 12.7 for females.
+
+```{r, echo=F}
+mp_sex<-merge(median_ping, sex_length, by='shark')
+ggplot(mp_sex, aes(x=factor(shark, level=t3sort$shark), y=timediff, fill=as.factor(sex))) + geom_bar(stat='identity') +  scale_fill_manual('Sex', values = c('0'="#0072B2", '1'="#CC79A7"), labels=c('Male', 'Female')) +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1), panel.grid.minor = element_blank(), panel.grid.major.x = element_blank(), panel.background = element_rect(colour = "white", fill='white'), panel.grid.major.y = element_line(color='grey90')) + 
+  labs(title='Median time between pings by shark \n Stratified median in black', x='Shark', y='Hours') +
+  geom_errorbarh(aes(xmin=1, xmax=7, y=9.3, height=0)) + geom_errorbarh(aes(xmin=8, xmax=34, y=12.7, height=0))
+```
+
+The last, and most exciting part to look at is the actual ping locations which shows where the tiger sharks are travelling and how often they are spending time off the shores of the islands. To do this, I've built a Shiny app utilizing Leaflet (for the first time... so please excuse it's lack of grand sophistication!) to show the where each shark was pinging while under study. Unfortunately it can't be integrated into the webpage, but click [here](https:/hannalindner.shinyapps.io/Shiny/) or on the image below to be redirected to the app. (And if anyone knows why my map marker of a shark head works on desktop browsers but not mobile browsers, please for the love of god, help me).
+
+<center>
+[![](/images/research/TigerShark/MapSC.png){ width=100% }](https://hannalindner.shinyapps.io/Shiny/)
+</center>
+
+<center>
+<font size="5">
+**SO WHAT'S IT MATTER?!**
+</font>
+</center>
+
+Collecting data like this matters a lot, actually. Sharks need to be protected from humans, and on some level, humans need to be 'protected' from sharks. The former is a policy issue, while the latter is an education issue. Knowing where sharks go tells us which areas demand protection, in terms of restricting commercial and non-commercial fishing, and ensuring non-polluted waters so the entire ecosystem can thrive. This is especially important in areas where sexually mature sharks are present because it could mean protection for birthing sites. (All tiger sharks with sex/length information except one were categorized as sexually mature in the present analysis). Beaches that correspond to Tiger Shark hot-spots can be signposted with warnings of heavy shark presence; making it a well-informed 'swim at your own risk' situation. The data shows that Tiger Sharks are frequently present in the shallow coastal waters surrounding the Hawaiian Islands; some may find it remarkable, that all things considered, that there are so few incidents. 
+
+"In the Hawaiian Islands, since 1828, there have been 116 confirmed shark attacks and only 8 confirmed shark attack fatalities. For Hawaii, that averages out to a shark attack every 1.59 years, and a fatality approximately every 23 years" ([Florida Museum of Natural History](https://www.floridamuseum.ufl.edu/shark-attacks/maps/na/usa/usa-all/)). Yet more proof that sharks do not predate on humans, and it's unfair to label them as attackers. Ultimately they are insanely evolved and intelligent, and occasionally, investigate humans that look strikingly like seals at times. 
+
+As of August 2018, the IUCN lists the Tiger Shark as near-threatened, with a declining population. Guessing how many of anything exists in the world's oceans is an impossible feat, but it is clear that sharks (in general) are being exploited at unsustainable levels - and for ludicrous things like shark fin soup and the oil from their livers, not to mention insurmountable death due to by-catch. Similarly, it's difficult to know exactly how much damage we are doing, but most estimates say humans kill 100-150 million sharks each year. That's direct damage - we mustn't forget to factor in the impacts of human-induced climate change (we've made the oceans up to 30% more acidic)... Demolish the top of an ecosystem, and the implications are not small.
+
+Read more [here](https://www.sharkwater.com/help-save-sharks/why-sharks-matter/).
+
+---
+<center>
+<font size="5">
+**References**
+</font>
+</center>
+- [On the original study](http://www.pacioos.hawaii.edu/wp-content/uploads/2016/05/tiger_shark_report_2016.pdf)
+- [On sexual maturity of Tiger Sharks](https://marinebio.org/species/tiger-sharks/galeocerdo-cuvier/)
+- [On confirmed unprovoked 'attacks' by state](https://www.floridamuseum.ufl.edu/shark-attacks/maps/na/usa/usa-all/)
+- [On ocean acidification](https://ocean.si.edu/ocean-life/invertebrates/ocean-acidification)
