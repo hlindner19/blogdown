@@ -6,10 +6,28 @@
     <description>Recent content in Tags on Hanna</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zn-Hans</language>
-    <lastBuildDate>Mon, 29 Oct 2018 21:17:12 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 15 Dec 2019 21:17:12 -0500</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title></title>
+      <link>/tags/</link>
+      <pubDate>Sun, 15 Dec 2019 21:17:12 -0500</pubDate>
+      
+      <guid>/tags/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Africa</title>
+      <link>/tags/africa/</link>
+      <pubDate>Tue, 26 May 2020 21:17:12 -0500</pubDate>
+      
+      <guid>/tags/africa/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Alternative Energy</title>
@@ -44,6 +62,15 @@
       <pubDate>Sun, 11 Aug 2019 21:17:12 -0500</pubDate>
       
       <guid>/tags/big-oil/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Biostatistics</title>
+      <link>/tags/biostatistics/</link>
+      <pubDate>Sun, 15 Dec 2019 21:17:12 -0500</pubDate>
+      
+      <guid>/tags/biostatistics/</guid>
       <description></description>
     </item>
     
@@ -138,11 +165,38 @@
     </item>
     
     <item>
+      <title>Hiking</title>
+      <link>/tags/hiking/</link>
+      <pubDate>Tue, 26 May 2020 21:17:12 -0500</pubDate>
+      
+      <guid>/tags/hiking/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Kauai</title>
       <link>/tags/kauai/</link>
       <pubDate>Mon, 15 Oct 2018 21:17:12 -0500</pubDate>
       
       <guid>/tags/kauai/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Long Weekends</title>
+      <link>/tags/long-weekends/</link>
+      <pubDate>Tue, 26 May 2020 21:17:12 -0500</pubDate>
+      
+      <guid>/tags/long-weekends/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Melanoma</title>
+      <link>/tags/melanoma/</link>
+      <pubDate>Sun, 15 Dec 2019 21:17:12 -0500</pubDate>
+      
+      <guid>/tags/melanoma/</guid>
       <description></description>
     </item>
     
@@ -188,6 +242,15 @@
       <pubDate>Sun, 11 Aug 2019 21:17:12 -0500</pubDate>
       
       <guid>/tags/plastic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Predictive Modeling</title>
+      <link>/tags/predictive-modeling/</link>
+      <pubDate>Sun, 15 Dec 2019 21:17:12 -0500</pubDate>
+      
+      <guid>/tags/predictive-modeling/</guid>
       <description></description>
     </item>
     
