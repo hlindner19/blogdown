@@ -4,4 +4,4 @@ draft = false
 title = "Research"
 +++
 
-Check back later for independent analysis projects I'm working on!
+Non-academic forays, only occasionally inspired by actual work.

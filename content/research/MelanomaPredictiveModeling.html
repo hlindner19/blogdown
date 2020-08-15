@@ -1,0 +1,1730 @@
+---
+title: "Predicting 5 Year Survival in SLNB-Absent Melanoma Patients"
+author: "Hanna Lindner"
+date: 2020-07-15T21:17:12-05:00
+categories: ["Research"]
+tags: ["Biostatistics", "Melanoma", "Predictive modeling", "ROC", 'Machine Learning', 'Regression']
+img: "images/research/Melanoma/stats.jpg"
+summaryLength: 30
+---
+
+
+
+<p>Sentinel lymph node biopsy (SLNB) is a procedure performed for melanoma patients to check whether their melanoma has spread beyond their original tumor site. This information is used for determining an appropriate treatment plan and predicting long term outcomes for patients. However, there are subsets of patients who do not undergo SLNB for a variety reasons: the tumor is considered thin, the patient is elderly, the melanoma is already late stage, or the patient simply elects to not have the procedure.</p>
+<p>Patients in the dataset are characterized by having: age between 20 and 89 years at time of diagnosis, melanomas greater than or equal to 0.45mm, diagnosis of first and only melanoma in 2010 or 2011, and are a part of a cancer registry. A subset of patients were excluded due to coding inconsistencies. Variables available for modeling include sex, age (coded by decade), melanoma thickness (mm), primary site, histology, ulcer status, and mitotic rate (present or absent).</p>
+<p>This analysis aims to predict 5 year melanoma-specific survival, as a binary outcome, for patients who did not undergo SLNB. While SLNB provides important information that informs long-term prognosis, it’s important to maintain a high predictive ability in the absence of this variable. Here we leverage other risk factors to investigate how well they perform alone, and jointly. I use both a logistic regression model, and a machine learning Naive Bayes model to generate predictions, and compare the model performance by AUC and model calibration. The models are internally validated using a bootstrap procedure.</p>
+<hr />
+<p>In the sample of 3331 subjects, 232 (7%) died due to their melanoma within five years of diagnosis. Table 1 looks at the characteristics comparing those who survived more than 5 years and those who did not for categorical variables sex, mitotic rate status, primary site, histology and ulcer status. A chi-square test of independence is used for each variable to test whether the distributions are comparable between the two groups (i.e. whether each variable is independent from survival status or there is an association between the two) . Rejecting the null indicates a significant association between the variable and survival status.</p>
+<table border="1">
+<tr>
+<th>
+<strong>Variable</strong>
+</th>
+<th>
+</th>
+<th>
+# Alive (Proportion)
+</th>
+<th>
+# Dead (Proportion)
+</th>
+<th>
+<span class="math inline">\(\chi^2\)</span>
+</th>
+<th>
+P-value
+</th>
+</tr>
+<tr>
+<td align="left">
+Sex
+</td>
+<td align="left">
+Male
+</td>
+<td>
+1702 (0.55)
+</td>
+<td>
+154 (0.66)
+</td>
+<td>
+11.34
+</td>
+<td>
+0.001
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td align="left">
+Female
+</td>
+<td>
+1406 (0.45)
+</td>
+<td>
+78 (0.34)
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td align="left">
+Mitosis Status
+</td>
+<td align="left">
+Absent
+</td>
+<td>
+1916 (0.62)
+</td>
+<td>
+41 (0.18)
+</td>
+<td>
+170.27
+</td>
+<td>
+&lt;0.001
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td align="left">
+Present
+</td>
+<td>
+1192 (0.38)
+</td>
+<td>
+191 (0.82)
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td align="left">
+Primary Site
+</td>
+<td axlign="left">
+PS 1
+</td>
+<td>
+374 (0.12)
+</td>
+<td>
+37 (0.16)
+</td>
+<td>
+45.55
+</td>
+<td>
+&lt;0.001
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td align="left">
+PS 2
+</td>
+<td>
+247 (0.08)
+</td>
+<td>
+45 (0.19)
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td align="left">
+PS 3
+</td>
+<td>
+1138 (0.37)
+</td>
+<td>
+62 (0.27)
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td align="left">
+PS 4
+</td>
+<td>
+796 (0.26)
+</td>
+<td>
+43 (0.19)
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td align="left">
+PS 5
+</td>
+<td>
+553 (0.18)
+</td>
+<td>
+45 (0.19)
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td align="left">
+Histology
+</td>
+<td align="left">
+Malignant Melanoma
+</td>
+<td>
+1469 (0.47)
+</td>
+<td>
+93 (0.4)
+</td>
+<td>
+352.11
+</td>
+<td>
+&lt;0.001
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td align="left">
+Nodular Melanoma
+</td>
+<td>
+82 (0.03)
+</td>
+<td>
+62 (0.27)
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td align="left">
+Amelanotic Melanoma
+</td>
+<td>
+11 (0)
+</td>
+<td>
+1 (0)
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td align="left">
+Lentigo Maligna Melanoma
+</td>
+<td>
+167 (0.05)
+</td>
+<td>
+5 (0.02)
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td align="left">
+Superficial Spreading Melanoma
+</td>
+<td>
+1263 (0.41)
+</td>
+<td>
+47 (0.2)
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td align="left">
+Acral Lentiginous Melanoma
+</td>
+<td>
+24 (0.01)
+</td>
+<td>
+8 (0.03)
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td align="left">
+Desmoplastic Melanoma
+</td>
+<td>
+30 (0.01)
+</td>
+<td>
+6 (0.03)
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td align="left">
+MM in Giant Pigmented Nevus
+</td>
+<td>
+13 (0)
+</td>
+<td>
+1 (0)
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td align="left">
+Epitheliod Cell Melanoma
+</td>
+<td>
+8 (0)
+</td>
+<td>
+2 (0.01)
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td align="left">
+Spindle Cell Melanoma
+</td>
+<td>
+32 (0.01)
+</td>
+<td>
+7 (0.03)
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td align="left">
+Ulcer Status
+</td>
+<td align="left">
+Absent
+</td>
+<td>
+2934 (0.94)
+</td>
+<td>
+118 (0.51)
+</td>
+<td>
+513.89
+</td>
+<td>
+&lt;0.001
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td align="left">
+Present
+</td>
+<td>
+174 (0.06)
+</td>
+<td>
+114 (0.49)
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+</table>
+<center>
+<font size="1"> <strong>Table 1</strong>: Study population characteristics for categorical predictor variables with Chi-square test of independence </font>
+</center>
+<p>Table 1 indicates that a strong majority of subjects who die within 5 years of their melanoma are male and had some degree of melanoma cell mitosis present (mitosis is a marker of how fast the cells are dividing). The most frequent type of histological classifications were malignant melanoma and nodular melanoma among those who died. About half had presence of an ulcer compared to just 6% in the group that survived beyond 5 years. Primary site 3 was most frequent among both groups (variable codes unknown).</p>
+<table border="1">
+<tr>
+<th>
+<strong>Variable</strong>
+</th>
+<th>
+Alive: mean (sd)
+</th>
+<th>
+Dead: mean (sd)
+</th>
+<th>
+t-statistic
+</th>
+<th>
+P-value
+</th>
+</tr>
+<tr>
+<td align="left">
+Age (in decade) at Dx
+</td>
+<td>
+54 (15)
+</td>
+<td>
+66 (14)
+</td>
+<td>
+-12.62
+</td>
+<td>
+&lt;0.001
+</td>
+</tr>
+<tr>
+<td align="left">
+Thickness (mm)
+</td>
+<td>
+0.89 (0.97)
+</td>
+<td>
+3.64 (3.1)
+</td>
+<td>
+-13.5
+</td>
+<td>
+&lt;0.001
+</td>
+</tr>
+</table>
+<center>
+<font size="1"> <strong>Table 2</strong>: Study population characteristics for continuous predictor variables with t-test for difference in means </font>
+</center>
+<p>Table 2 compares the means of the continuous variables age at diagnosis (coded by decade) and thickness in mm between those who survived and those who did not, along with t-tests for a difference in means. Those who die within 5 years from their melanoma are significantly older (by more than 10 years, on average) at the time of diagnosis, and had melanomas, on average, two millimeters greater - again a statistically significant difference. It is also interesting to note that the standard deviations for age are comparable between the two groups, but the standard deviation for thickness is over three times greater in the group that died within 5 years.</p>
+<p>With a better understanding of the study population, we conduct a univariate analysis to understand the impact of each variable alone as a predictor before undertaking the full multivariate analysis. Letting <span class="math inline">\(Y=1\)</span> denote death from melanoma within 5 years and <span class="math inline">\(Y=0\)</span> denote alive at 5 years, each variable, <span class="math inline">\(X\)</span>, enters a logistic regression model with <span class="math inline">\(Y\)</span> as the outcome:
+<span class="math display">\[\log\Bigg[\frac{P(Y=1|X)}{P(Y=0|X)}\Bigg]=\beta_0+\beta_1X\]</span>
+The quantity <span class="math inline">\(e^{\beta_1}\)</span> represents the multiplicative increase (or decrease) in the odds of death for a one unit increase in <span class="math inline">\(X\)</span>. For categorical <span class="math inline">\(X\)</span>, each category has its own regression coefficient except for the chosen referent category for identifiability purposes. Table 3 contains the estimated coefficients, standard errors, and Wald tests to assess the significance of each predictor for the seven model fits. All variables appear to be significant on their own; having mitosis present, a nodular melanoma, a acral lentiginous melanoma, or an ulcer present stand out as increasing the odds of death by more than 5 times that of the respective referent groups.</p>
+<table border="1">
+<tr>
+<th>
+<strong>Variable</strong>
+</th>
+<th>
+<strong>Parameter</strong>
+</th>
+<th>
+<strong>Odds Ratio</strong>
+</th>
+<th>
+<span class="math inline">\(\hat{\beta}\)</span>
+</th>
+<th>
+<span class="math inline">\(SE(\hat{\beta})\)</span>
+</th>
+<th>
+<strong>Wald stat.</strong>
+</th>
+<th>
+<strong>P-value</strong>
+</th>
+</tr>
+<tr>
+<td>
+Sex
+</td>
+<td align="left">
+<span class="math inline">\(\hat{\beta_0}\)</span>
+</td>
+<td align="right">
+0.15
+</td>
+<td align="right">
+-1.91
+</td>
+<td align="right">
+0.20
+</td>
+<td align="right">
+-9.33
+</td>
+<td align="right">
+&lt;0.01
+</td>
+</tr>
+<tr>
+<td>
+(Ref = Male)
+</td>
+<td align="left">
+<span class="math inline">\(\hat{\beta_1}\)</span>: Female
+</td>
+<td align="right">
+0.61
+</td>
+<td align="right">
+-0.49
+</td>
+<td align="right">
+0.14
+</td>
+<td align="right">
+-3.42
+</td>
+<td align="right">
+&lt;0.01
+</td>
+</tr>
+<tr>
+<td>
+—
+</td>
+<td>
+—
+</td>
+<td>
+—
+</td>
+<td>
+—
+</td>
+<td>
+—
+</td>
+<td>
+—
+</td>
+<td>
+—
+</td>
+</tr>
+<tr>
+<td>
+Age (in decade) at Dx
+</td>
+<td align="left">
+<span class="math inline">\(\hat{\beta_0}\)</span>
+</td>
+<td align="right">
+0.00
+</td>
+<td align="right">
+-6.29
+</td>
+<td align="right">
+0.37
+</td>
+<td align="right">
+-17.10
+</td>
+<td align="right">
+&lt;0.01
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td align="left">
+<span class="math inline">\(\hat{\beta_1}\)</span>
+</td>
+<td align="right">
+1.84
+</td>
+<td align="right">
+0.61
+</td>
+<td align="right">
+0.06
+</td>
+<td align="right">
+11.05
+</td>
+<td align="right">
+&lt;0.01
+</td>
+</tr>
+<tr>
+<td>
+—
+</td>
+<td>
+—
+</td>
+<td>
+—
+</td>
+<td>
+—
+</td>
+<td>
+—
+</td>
+<td>
+—
+</td>
+<td>
+—
+</td>
+</tr>
+<tr>
+<td>
+Mitosis Status
+</td>
+<td align="left">
+<span class="math inline">\(\hat{\beta_0}\)</span>
+</td>
+<td align="right">
+0.02
+</td>
+<td align="right">
+-3.84
+</td>
+<td align="right">
+0.16
+</td>
+<td align="right">
+-24.34
+</td>
+<td align="right">
+&lt;0.01
+</td>
+</tr>
+<tr>
+<td>
+(Ref = Absent)
+</td>
+<td align="left">
+<span class="math inline">\(\hat{\beta_1}\)</span>: Present
+</td>
+<td align="right">
+7.46
+</td>
+<td align="right">
+2.01
+</td>
+<td align="right">
+0.18
+</td>
+<td align="right">
+11.43
+</td>
+<td align="right">
+&lt;0.01
+</td>
+</tr>
+<tr>
+<td>
+—
+</td>
+<td>
+—
+</td>
+<td>
+—
+</td>
+<td>
+—
+</td>
+<td>
+—
+</td>
+<td>
+—
+</td>
+<td>
+—
+</td>
+</tr>
+<tr>
+<td>
+Primary Site
+</td>
+<td align="left">
+<span class="math inline">\(\hat{\beta_0}\)</span>
+</td>
+<td align="right">
+0.10
+</td>
+<td align="right">
+-2.31
+</td>
+<td align="right">
+0.17
+</td>
+<td align="right">
+-13.42
+</td>
+<td align="right">
+&lt;0.01
+</td>
+</tr>
+<tr>
+<td>
+(Ref = P1)
+</td>
+<td align="left">
+<span class="math inline">\(\hat{\beta_1}\)</span>: P2
+</td>
+<td align="right">
+1.84
+</td>
+<td align="right">
+0.61
+</td>
+<td align="right">
+0.24
+</td>
+<td align="right">
+2.58
+</td>
+<td align="right">
+0.01
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td align="left">
+<span class="math inline">\(\hat{\beta_2}\)</span>: P3
+</td>
+<td align="right">
+0.55
+</td>
+<td align="right">
+-0.59
+</td>
+<td align="right">
+0.22
+</td>
+<td align="right">
+-2.74
+</td>
+<td align="right">
+0.01
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td align="left">
+<span class="math inline">\(\hat{\beta_3}\)</span>: P4
+</td>
+<td align="right">
+0.55
+</td>
+<td align="right">
+-0.60
+</td>
+<td align="right">
+0.23
+</td>
+<td align="right">
+-2.58
+</td>
+<td align="right">
+0.01
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td align="left">
+<span class="math inline">\(\hat{\beta_4}\)</span>: P5
+</td>
+<td align="right">
+0.83
+</td>
+<td align="right">
+-0.19
+</td>
+<td align="right">
+0.23
+</td>
+<td align="right">
+-0.83
+</td>
+<td align="right">
+0.40
+</td>
+</tr>
+<tr>
+<td>
+—
+</td>
+<td>
+—
+</td>
+<td>
+—
+</td>
+<td>
+—
+</td>
+<td>
+—
+</td>
+<td>
+—
+</td>
+<td>
+—
+</td>
+</tr>
+<tr>
+<td>
+Histology
+</td>
+<td align="left">
+<span class="math inline">\(\hat{\beta_0}\)</span>
+</td>
+<td align="right">
+0.06
+</td>
+<td align="right">
+-2.76
+</td>
+<td align="right">
+0.11
+</td>
+<td align="right">
+-25.81
+</td>
+<td align="right">
+&lt;0.01
+</td>
+</tr>
+<tr>
+<td>
+(Ref = Malignant Melanoma)
+</td>
+<td align="left">
+<span class="math inline">\(\hat{\beta_1}\)</span>: Nodular Melanoma
+</td>
+<td align="right">
+11.94
+</td>
+<td align="right">
+2.48
+</td>
+<td align="right">
+0.20
+</td>
+<td align="right">
+12.44
+</td>
+<td align="right">
+&lt;0.01
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td align="left">
+<span class="math inline">\(\hat{\beta_2}\)</span>: Amelanotic Melanoma
+</td>
+<td align="right">
+1.43
+</td>
+<td align="right">
+0.36
+</td>
+<td align="right">
+1.05
+</td>
+<td align="right">
+0.34
+</td>
+<td align="right">
+0.73
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td align="left">
+<span class="math inline">\(\hat{\beta_3}\)</span>: Lentigo Maligna Melanoma
+</td>
+<td align="right">
+0.47
+</td>
+<td align="right">
+-0.75
+</td>
+<td align="right">
+0.47
+</td>
+<td align="right">
+-1.61
+</td>
+<td align="right">
+0.11
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td align="left">
+<span class="math inline">\(\hat{\beta_4}\)</span>: Superficial Spreading Melanoma
+</td>
+<td align="right">
+0.59
+</td>
+<td align="right">
+-0.53
+</td>
+<td align="right">
+0.18
+</td>
+<td align="right">
+-2.90
+</td>
+<td align="right">
+&lt;0.01
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td align="left">
+<span class="math inline">\(\hat{\beta_5}\)</span>: Acral Lentiginous Melanoma
+</td>
+<td align="right">
+5.26
+</td>
+<td align="right">
+1.66
+</td>
+<td align="right">
+0.42
+</td>
+<td align="right">
+3.94
+</td>
+<td align="right">
+&lt;0.01
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td align="left">
+<span class="math inline">\(\hat{\beta_6}\)</span>: Desmoplastic Melanoma
+</td>
+<td align="right">
+3.16
+</td>
+<td align="right">
+1.15
+</td>
+<td align="right">
+0.46
+</td>
+<td align="right">
+2.50
+</td>
+<td align="right">
+0.01
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td align="left">
+<span class="math inline">\(\hat{\beta_7}\)</span>: MM in Giant Pigmented Nevus
+</td>
+<td align="right">
+1.21
+</td>
+<td align="right">
+0.19
+</td>
+<td align="right">
+1.04
+</td>
+<td align="right">
+0.19
+</td>
+<td align="right">
+0.85
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td align="left">
+<span class="math inline">\(\hat{\beta_8}\)</span>: Epitheliod Cell Melanoma
+</td>
+<td align="right">
+3.94
+</td>
+<td align="right">
+1.37
+</td>
+<td align="right">
+0.80
+</td>
+<td align="right">
+1.72
+</td>
+<td align="right">
+0.09
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td align="left">
+<span class="math inline">\(\hat{\beta_9}\)</span>: Spindle Cell Melanoma
+</td>
+<td align="right">
+3.46
+</td>
+<td align="right">
+1.24
+</td>
+<td align="right">
+0.43
+</td>
+<td align="right">
+2.88
+</td>
+<td align="right">
+&lt;0.01
+</td>
+</tr>
+<tr>
+<td>
+—
+</td>
+<td>
+—
+</td>
+<td>
+—
+</td>
+<td>
+—
+</td>
+<td>
+—
+</td>
+<td>
+—
+</td>
+<td>
+—
+</td>
+</tr>
+<tr>
+<td>
+Ulcer Status
+</td>
+<td align="left">
+<span class="math inline">\(\hat{\beta_0}\)</span>
+</td>
+<td align="right">
+0.04
+</td>
+<td align="right">
+-3.21
+</td>
+<td align="right">
+0.09
+</td>
+<td align="right">
+-34.19
+</td>
+<td align="right">
+&lt;0.01
+</td>
+</tr>
+<tr>
+<td>
+(Ref=Absent)
+</td>
+<td align="left">
+<span class="math inline">\(\hat{\beta_1}\)</span>: Present
+</td>
+<td align="right">
+16.28
+</td>
+<td align="right">
+2.79
+</td>
+<td align="right">
+0.15
+</td>
+<td align="right">
+18.25
+</td>
+<td align="right">
+&lt;0.01
+</td>
+</tr>
+<tr>
+<td>
+—
+</td>
+<td>
+—
+</td>
+<td>
+—
+</td>
+<td>
+—
+</td>
+<td>
+—
+</td>
+<td>
+—
+</td>
+<td>
+—
+</td>
+</tr>
+<tr>
+<td>
+Thickness
+</td>
+<td align="left">
+<span class="math inline">\(\hat{\beta_0}\)</span>
+</td>
+<td align="right">
+0.03
+</td>
+<td align="right">
+-3.64
+</td>
+<td align="right">
+0.11
+</td>
+<td align="right">
+-34.45
+</td>
+<td align="right">
+&lt;0.01
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td align="left">
+<span class="math inline">\(\hat{\beta_1}\)</span>
+</td>
+<td align="right">
+1.88
+</td>
+<td align="right">
+0.63
+</td>
+<td align="right">
+0.04
+</td>
+<td align="right">
+16.90
+</td>
+<td align="right">
+&lt;0.01
+</td>
+</tr>
+</table>
+<center>
+<font size="1"> <strong>Table 3</strong>: Model fits from univariate logistic regression </font>
+</center>
+<p>Fitting the logistic regression model allows us to construct an ROC curve and corresponding AUC for each predictor. This is important to consider separately because significant association, as seen in Table 3, will not necessarily imply high predictive ability. Given the model fits above, we can estimate each subjects probability of death as <span class="math inline">\(\hat{P}(Y=1|X)\)</span> for each variable. Using this quantity as a ‘diagnostic’, we calculate the operating characteristics sensitivity and specificity for all possible values (<span class="math inline">\(c\)</span>) of <span class="math inline">\(\hat{P}\in [0,1]\)</span>.
+<span class="math display">\[Sensitivity=Pr(\hat{P}\geq c|Y=1)\]</span>
+<span class="math display">\[Specificity=Pr(\hat{P}&lt; c|Y=0)\]</span>
+Sensitivity represents the true positive fraction, and specificity the true negative fraction, and tell us for a given cut point <span class="math inline">\(c\)</span>, how well the predictor variable from the logistic regression model discriminates between those who die within 5 years and those who do not.</p>
+<p>A plot of 1-specificity versus sensitivity for all <span class="math inline">\(c\)</span> gives rise to the ROC curve. The area under the ROC curve - the AUC - is an overall statistic, that we use to inform how well the model predicts death. A value of AUC=1 means 100% of the outcomes were correctly predicted by the fitted model. If the ROC curve follows the 45 degree line, the AUC will be close to 0.5, indicating no predictive ability of the model - effectively a coin toss. Figure 1 below shows the ROC curves for each predictor variable, along with their AUC. Thickness (of the melanoma) has the largest AUC at 0.87 indicating it best predicts death within 5 years, despite the fact that its effect size in Table 3 was not the largest. The AUC can also be interpreted as the probability that a randomly chosen subject with <span class="math inline">\(Y=1\)</span> has a higher <span class="math inline">\(\hat{P}\)</span> value than a randomly chosen subject with <span class="math inline">\(Y=0\)</span>. The AUC resulting from the training data (here, the entire dataset) will inherently be overly ‘optimistic’, so it is important that we use a validation procedure later when comparing predictive performance between the two models.</p>
+<img src="/research/MelanomaPredictiveModeling_files/figure-html/unnamed-chunk-2-1.png" width="768" style="display: block; margin: auto;" />
+<center>
+<font size="1"> <strong>Figure 1</strong>: Univariate ROC curves obtained by logistic regression </font>
+</center>
+<p>Understanding the strength of these predictors alone, we now ask how strong they are when used in conjunction. We will consider two different prediction models: the logistic regression model again, and the naive Bayes model. The latter is considered a machine learning approach, and is more involved than the logistic regression model. One question we are interested in answering is whether our ability to estimate model tuning parameters leads to any substantial payoff in terms of our ability to predict death within 5 years.</p>
+<p>We fit the multivariate regression model:<br />
+<span class="math display">\[\log\Bigg[\frac{P(Y=1|X)}{P(Y=0|X)}\Bigg]=\beta_0+\beta_1*Sex+ \beta_2*Age+\beta_3*Ulcer+\beta_4*Mitosis + \beta_5*Thickness +\]</span> <span class="math display">\[ \vec{\boldsymbol{\beta}_6}*PSite+\vec{\boldsymbol{\beta}_7}*Histology\]</span>
+where <span class="math inline">\(\boldsymbol{\vec{\beta}_6}=[\beta_{6,1},\beta_{6,2},\beta_{6,3},\beta_{6,4}]\)</span> represents the 5 primary sites (P1 is the referent group), and <span class="math inline">\(\boldsymbol{\vec{\beta}_7}=[\beta_{7,1},...,\beta_{7,9}]\)</span> represents the 9 histologies (malignant melanoma is the referent group).</p>
+<p>When taken together, sex is no longer significant in the model. Age, ulcer status, mitosis status, and thickness are all highly significant, while only the P2 primary site is significant relative to P1. Nodular Melanoma and Epitheliod Cell Melanoma are significant relative to the Malignant Melanoma histology. Again, significant association does not imply high predictive ability so we evaluate the predictive ability by looking at the AUC. Under the multivariate model, the AUC increased to 0.90, though this will be corrected through internal bootstrap validation. Bootstrap validation is selected instead of splitting the dataset into a training and test set because of the low event rate. The logistic regression and Naive Bayes model will be validated concurrently.</p>
+<table border="1">
+<tr>
+<th>
+Variable
+</th>
+<th>
+Parameter
+</th>
+<th>
+Odds Ratio
+</th>
+<th>
+<span class="math inline">\(\hat{\beta}\)</span>
+</th>
+<th>
+<span class="math inline">\(SE(\hat{\beta})\)</span>
+</th>
+<th>
+Wald Stat.
+</th>
+<th>
+P-value
+</th>
+</tr>
+<tr>
+<td>
+Intercept
+</td>
+<td align="left">
+<span class="math inline">\(\hat{\beta_0}\)</span>
+</td>
+<td align="right">
+0.90
+</td>
+<td align="right">
+-0.11
+</td>
+<td align="right">
+0.02
+</td>
+<td align="right">
+-4.86
+</td>
+<td align="right">
+&lt;0.01
+</td>
+</tr>
+<tr>
+<td>
+Sex (Ref.=Male)
+</td>
+<td align="left">
+<span class="math inline">\(\hat{\beta_1}\)</span>: Female
+</td>
+<td align="right">
+0.99
+</td>
+<td align="right">
+-0.01
+</td>
+<td align="right">
+0.01
+</td>
+<td align="right">
+-1.18
+</td>
+<td align="right">
+0.24
+</td>
+</tr>
+<tr>
+<td>
+Age (in decade) at Dx
+</td>
+<td align="left">
+<span class="math inline">\(\hat{\beta_2}\)</span>
+</td>
+<td align="right">
+1.02
+</td>
+<td align="right">
+0.02
+</td>
+<td align="right">
+0.00
+</td>
+<td align="right">
+6.56
+</td>
+<td align="right">
+&lt;0.01
+</td>
+</tr>
+<tr>
+<td>
+Ulcer Status (Ref.=Absent)
+</td>
+<td align="left">
+<span class="math inline">\(\hat{\beta_3}\)</span>: Present
+</td>
+<td align="right">
+1.17
+</td>
+<td align="right">
+0.16
+</td>
+<td align="right">
+0.02
+</td>
+<td align="right">
+10.86
+</td>
+<td align="right">
+&lt;0.01
+</td>
+</tr>
+<tr>
+<td>
+Mitosis Status (Ref.=Absent)
+</td>
+<td align="left">
+<span class="math inline">\(\hat{\beta_4}\)</span>: Present
+</td>
+<td align="right">
+1.02
+</td>
+<td align="right">
+0.02
+</td>
+<td align="right">
+0.01
+</td>
+<td align="right">
+3.04
+</td>
+<td align="right">
+&lt;0.01
+</td>
+</tr>
+<tr>
+<td>
+Thickness (mm)
+</td>
+<td align="left">
+<span class="math inline">\(\hat{\beta_5}\)</span>
+</td>
+<td align="right">
+1.06
+</td>
+<td align="right">
+0.06
+</td>
+<td align="right">
+0.00
+</td>
+<td align="right">
+18.23
+</td>
+<td align="right">
+&lt;0.01
+</td>
+</tr>
+<tr>
+<td>
+Primary Site (Ref.=P1)
+</td>
+<td align="left">
+<span class="math inline">\(\hat{\beta}_{6,1}\)</span>: P2
+</td>
+<td align="right">
+1.05
+</td>
+<td align="right">
+0.05
+</td>
+<td align="right">
+0.02
+</td>
+<td align="right">
+3.24
+</td>
+<td align="right">
+&lt;0.01
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td align="left">
+<span class="math inline">\(\hat{\beta}_{6,2}\)</span>: P3
+</td>
+<td align="right">
+1.01
+</td>
+<td align="right">
+0.01
+</td>
+<td align="right">
+0.01
+</td>
+<td align="right">
+0.82
+</td>
+<td align="right">
+0.41
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td align="left">
+<span class="math inline">\(\hat{\beta}_{6,3}\)</span>: P4
+</td>
+<td align="right">
+1.00
+</td>
+<td align="right">
+0.00
+</td>
+<td align="right">
+0.01
+</td>
+<td align="right">
+0.02
+</td>
+<td align="right">
+0.99
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td align="left">
+<span class="math inline">\(\hat{\beta}_{6,4}\)</span>: P5
+</td>
+<td align="right">
+1.02
+</td>
+<td align="right">
+0.02
+</td>
+<td align="right">
+0.01
+</td>
+<td align="right">
+1.45
+</td>
+<td align="right">
+0.15
+</td>
+</tr>
+<tr>
+<td>
+Histology (Ref.=Malignant Melanoma)
+</td>
+<td align="left">
+<span class="math inline">\(\hat{\beta}_{7,1}\)</span>: Nodular Melanoma
+</td>
+<td align="right">
+1.14
+</td>
+<td align="right">
+0.13
+</td>
+<td align="right">
+0.02
+</td>
+<td align="right">
+6.18
+</td>
+<td align="right">
+&lt;0.01
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td align="left">
+<span class="math inline">\(\hat{\beta}_{7,2}\)</span>: Amelanotic Melanoma
+</td>
+<td align="right">
+0.90
+</td>
+<td align="right">
+-0.10
+</td>
+<td align="right">
+0.06
+</td>
+<td align="right">
+-1.62
+</td>
+<td align="right">
+0.11
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td align="left">
+<span class="math inline">\(\hat{\beta}_{7,3}\)</span>: Lentigo Maligna Melanoma
+</td>
+<td align="right">
+0.98
+</td>
+<td align="right">
+-0.02
+</td>
+<td align="right">
+0.02
+</td>
+<td align="right">
+-1.32
+</td>
+<td align="right">
+0.19
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td align="left">
+<span class="math inline">\(\hat{\beta}_{7,4}\)</span>: Superficial Spreading Melanoma
+</td>
+<td align="right">
+1.00
+</td>
+<td align="right">
+-0.00
+</td>
+<td align="right">
+0.01
+</td>
+<td align="right">
+-0.29
+</td>
+<td align="right">
+0.77
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td align="left">
+<span class="math inline">\(\hat{\beta}_{7,5}\)</span>: Acral Lentiginous Melanoma
+</td>
+<td align="right">
+1.08
+</td>
+<td align="right">
+0.08
+</td>
+<td align="right">
+0.04
+</td>
+<td align="right">
+1.98
+</td>
+<td align="right">
+0.05
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td align="left">
+<span class="math inline">\(\hat{\beta}_{7,6}\)</span>: Desmoplastic Melanoma
+</td>
+<td align="right">
+0.97
+</td>
+<td align="right">
+-0.03
+</td>
+<td align="right">
+0.04
+</td>
+<td align="right">
+-0.95
+</td>
+<td align="right">
+0.34
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td align="left">
+<span class="math inline">\(\hat{\beta}_{7,7}\)</span>: MM in Giant Pigmented Nevus
+</td>
+<td align="right">
+1.04
+</td>
+<td align="right">
+0.04
+</td>
+<td align="right">
+0.06
+</td>
+<td align="right">
+0.71
+</td>
+<td align="right">
+0.48
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td align="left">
+<span class="math inline">\(\hat{\beta}_{7,8}\)</span>: Epitheliod Cell Melanoma
+</td>
+<td align="right">
+1.16
+</td>
+<td align="right">
+0.15
+</td>
+<td align="right">
+0.07
+</td>
+<td align="right">
+2.21
+</td>
+<td align="right">
+0.03
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td align="left">
+<span class="math inline">\(\hat{\beta}_{7,9}\)</span>: Spindle Cell Melanoma
+</td>
+<td align="right">
+0.97
+</td>
+<td align="right">
+-0.03
+</td>
+<td align="right">
+0.04
+</td>
+<td align="right">
+-0.92
+</td>
+<td align="right">
+0.36
+</td>
+</tr>
+</table>
+<center>
+<font size="1"> <strong>Table 4</strong>: Model fit from multivariate logistic regression model </font>
+</center>
+<img src="/research/MelanomaPredictiveModeling_files/figure-html/unnamed-chunk-4-1.png" width="480" style="display: block; margin: auto;" />
+<center>
+<font size="1"> <strong>Figure 2</strong>: Multivariate ROC curve obtained by logistic regression </font>
+</center>
+<p>It is important to examine model calibration prior to validation, which looks at whether the model is predicting an accurate number of events for intervals of the risk score, <span class="math inline">\(\hat{P}\)</span>. For example, we’d like to see that subjects with a risk score between 0 and 0.1 contribute about 12 out of 232 (0.05%) of the total number of observed events, since 0.05 is the midpoint of the risk score interval. We examine calibration using a calibration plot; a plot that follows the 45-degree line indicates good model calibration. A model that predicts well but is poorly calibrated is ultimately not useful, as it is over-predicting the outcome of interest for some individuals and under-predicting for others. The logistic regression model has good model calibration, noted by the blue line that roughly follows the 45-degree line in Figure 3. The exception is the high risk groups, where there is some over-prediction and under-prediction.</p>
+<img src="/research/MelanomaPredictiveModeling_files/figure-html/unnamed-chunk-5-1.png" width="480" style="display: block; margin: auto;" />
+<center>
+<font size="1"> <strong>Figure 3</strong>: Calibration of multivariate logistic regression model</font>
+</center>
+
+<p>The logistic regression model is made up of a linear combination of variables, while the Naive Bayes model is represented entirely by probability statements:
+<span class="math display">\[P(Y|\mathbf{X})=\frac{P(\mathbf{X}|Y)\times P(Y)}{P(\mathbf{X})}\]</span>
+When <span class="math inline">\(X\)</span> is categorical, <span class="math inline">\(P(X)\)</span> and <span class="math inline">\(P(X|Y)\)</span> is estimated using table proportions, and the prior class probability <span class="math inline">\(P(Y)\)</span> is also estimated from the data. For continuous <span class="math inline">\(X\)</span>, the distribution can either be estimated using a normal kernel, or a nonparametric kernel; this choice serves as the tuning parameter for the model. Additionally, we can include a tuning parameter for smoothing any marginal probabilities that are equal to 0, called the Laplace correction which adds a small value to the probabilities. We will consider values 0 (no smoothing), 0.5, 1, and 2. One limitation of this model is that in order to improve computation, we assume the covariates are independent, which is unlikely to be true. However it enables us to calculate joint probabilities as the product of marginal probabilities; studies have shown the Naive Bayes model still maintains good model performance relative to other machine learning methods under the independence assumption.</p>
+<p>We use leave-one-out cross validation to determine the tuning parameters using the AUC as the performance metric. The model performed the same regardless of Laplace correction, so we select 0, no smoothing. Model performance was better using kernel density estimates for the covariate distributions. The AUC to evaluate the predictive ability of the Naive Bayes model is 0.90, the same as that of the logistic regression model.</p>
+<img src="/research/MelanomaPredictiveModeling_files/figure-html/unnamed-chunk-6-1.png" width="480" style="display: block; margin: auto;" />
+<center>
+<font size="1"> <strong>Figure 4</strong>: Multivariate ROC curve obtained by Naive Bayes model</font>
+</center>
+<p>Looking at the calibration plot, however, reveals that the model is poorly calibrated. There is vast overestimation for a majority of the risk intervals. Fitting the another Naive Bayes model to the original model’s predictions is a tool for recalibrating a model. Doing so overcorrected and resulted in excessive underestimation (data not shown), so we retain the original Naive Bayes model.</p>
+<img src="/research/MelanomaPredictiveModeling_files/figure-html/unnamed-chunk-7-1.png" width="480" style="display: block; margin: auto;" />
+<center>
+<font size="1"> <strong>Figure 5</strong>: Calibration of Naive Bayes model</font>
+</center>
+<p>Now that both models have been developed, we use internal bootstrap validation to correct the model performance, since it will always be overly optimistic when using the exact data the model was built on.</p>
+<table border="1">
+<tr>
+<th>
+</th>
+<th>
+Training AUC
+</th>
+<th>
+Validation AUC
+</th>
+</tr>
+<tr>
+<td align="right">
+LR Model
+</td>
+<td align="right">
+0.895
+</td>
+<td align="right">
+0.883
+</td>
+</tr>
+<tr>
+<td align="right">
+NB Model
+</td>
+<td align="right">
+0.895
+</td>
+<td align="right">
+0.891
+</td>
+</tr>
+</table>
+<p>After validation, the predictive ability of the logistic regression and naive Bayes model reduced to 0.88 and 0.89. Given the relatively small dataset, and the straightforwardness of the problem, I saw no reason a priori that the machine learning model would outperform the logistic regression model. These results confirm this, as the models perform almost equally in terms of predictive performance. The logistic regression model earns a leg up though, in having much better model calibration. It is well known that Naive Bayes models, in general, do not tend to have great model calibration.</p>
+<p>In the absense of a sentinel lymph node biopsy and knowing whether the cancer has entered the lymphatic system, we still have a good ability to predict death within 5 years. We can infer from the univariate analysis that thickness is the variable that contributes the most to the predictive ability, which makes sense given that thicker lesions would correspond to more advanced and aggressive disease. We were able to confirm that we can maintain a high predictive ability in the absense of information from a SLNB, which is important given there are multiple subsets of patients who will not have this information. One limitation of the presented work, and a option to extend the analysis, is to look at prediction on an individual level. The AUC is a population-based metric and tells us here that we are predicting almost the right number of deaths across the study population. It does not tell us whether those predicted to die within 5 years are those who actually died within 5 years in the dataset. A confusion matrix would help to understand this aspect of the predictions.</p>

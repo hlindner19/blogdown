@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Predictive Models on Hanna</title>
+    <link>/tags/predictive-models/</link>
+    <description>Recent content in Predictive Models on Hanna</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zn-Hans</language>
+    <lastBuildDate>Sun, 15 Dec 2019 21:17:12 -0500</lastBuildDate>
+    
+	<atom:link href="/tags/predictive-models/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Comparing models that predict 5 year survival for melanoma patients</title>
+      <link>/research/melanomapredictivemodeling/</link>
+      <pubDate>Sun, 15 Dec 2019 21:17:12 -0500</pubDate>
+      
+      <guid>/research/melanomapredictivemodeling/</guid>
+      <description>Sentinel lymph node biopsy (SLNB) is a procedure performed for melanoma patients to check whether their melanoma has spread beyond their original tumor site. Such information is used for staging, determining a treatment plan and predicting long term outcomes for patients. There are however subsets of patients who do not undergo SLNB for various reasons: the tumor is considered thin, the patient is elderly, the melanoma is already late stage, or the patient elects to not have the procedure.</description>
+    </item>
+    
+  </channel>
+</rss>

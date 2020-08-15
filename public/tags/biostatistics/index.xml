@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Research on Hanna</title>
-    <link>/categories/research/</link>
-    <description>Recent content in Research on Hanna</description>
+    <title>Biostatistics on Hanna</title>
+    <link>/tags/biostatistics/</link>
+    <description>Recent content in Biostatistics on Hanna</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zn-Hans</language>
     <lastBuildDate>Wed, 15 Jul 2020 21:17:12 -0500</lastBuildDate>
     
-	<atom:link href="/categories/research/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/biostatistics/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,15 +18,6 @@
       
       <guid>/research/melanomapredictivemodeling/</guid>
       <description>Sentinel lymph node biopsy (SLNB) is a procedure performed for melanoma patients to check whether their melanoma has spread beyond their original tumor site. This information is used for determining an appropriate treatment plan and predicting long term outcomes for patients. However, there are subsets of patients who do not undergo SLNB for a variety reasons: the tumor is considered thin, the patient is elderly, the melanoma is already late stage, or the patient simply elects to not have the procedure.</description>
-    </item>
-    
-    <item>
-      <title>A descriptive study of Tiger Sharks in Hawaii</title>
-      <link>/research/tigershark/</link>
-      <pubDate>Fri, 15 Nov 2019 21:17:12 -0500</pubDate>
-      
-      <guid>/research/tigershark/</guid>
-      <description>In this brief descriptive analysis, I use data from the Pacific Islands Ocean Observing System (PacIOOS) to characterize tagged Tiger Sharks that roam the Pacific Hawaiian waters, specifically around the islands of Maui and Oahu. The dataset contains 46 different tagged sharks, spanning 7036 observations which represent the number of times the 46 tags registered with 27 acoustic receivers around placed around the islands.</description>
     </item>
     
   </channel>
