@@ -3,7 +3,7 @@ title: "Cape Town, South Africa"
 author: "Hanna Lindner"
 date: 2019-01-15T21:17:12-05:00
 categories: ["Travel"]
-tags: ["South Africa", "Sharks", "Hikes", "National Parks", "Climbing"]
+tags: ["Africa", "Sharks", "Hikes", "National Parks", "Climbing"]
 img: "images/travel/Cape_Town/Hanna-23.jpg"
 summaryLength: 30
 ---

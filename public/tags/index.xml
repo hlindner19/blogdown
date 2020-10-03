@@ -6,19 +6,10 @@
     <description>Recent content in Tags on Hanna</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zn-Hans</language>
-    <lastBuildDate>Sun, 15 Dec 2019 21:17:12 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 25 May 2020 21:17:12 -0500</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title></title>
-      <link>/tags/</link>
-      <pubDate>Sun, 15 Dec 2019 21:17:12 -0500</pubDate>
-      
-      <guid>/tags/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>Africa</title>
@@ -41,7 +32,7 @@
     <item>
       <title>Backpacking</title>
       <link>/tags/backpacking/</link>
-      <pubDate>Fri, 01 Nov 2019 21:17:12 -0500</pubDate>
+      <pubDate>Fri, 02 Oct 2020 21:17:12 -0500</pubDate>
       
       <guid>/tags/backpacking/</guid>
       <description></description>
@@ -68,7 +59,7 @@
     <item>
       <title>Biostatistics</title>
       <link>/tags/biostatistics/</link>
-      <pubDate>Sun, 15 Dec 2019 21:17:12 -0500</pubDate>
+      <pubDate>Mon, 10 Aug 2020 21:17:12 -0500</pubDate>
       
       <guid>/tags/biostatistics/</guid>
       <description></description>
@@ -113,7 +104,7 @@
     <item>
       <title>Climbing</title>
       <link>/tags/climbing/</link>
-      <pubDate>Tue, 15 Jan 2019 21:17:12 -0500</pubDate>
+      <pubDate>Mon, 25 May 2020 21:17:12 -0500</pubDate>
       
       <guid>/tags/climbing/</guid>
       <description></description>
@@ -138,6 +129,15 @@
     </item>
     
     <item>
+      <title>Europe</title>
+      <link>/tags/europe/</link>
+      <pubDate>Fri, 02 Oct 2020 21:17:12 -0500</pubDate>
+      
+      <guid>/tags/europe/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Faroe Islands</title>
       <link>/tags/faroe-islands/</link>
       <pubDate>Fri, 01 Nov 2019 21:17:12 -0500</pubDate>
@@ -158,18 +158,9 @@
     <item>
       <title>Hikes</title>
       <link>/tags/hikes/</link>
-      <pubDate>Fri, 01 Nov 2019 21:17:12 -0500</pubDate>
+      <pubDate>Fri, 02 Oct 2020 21:17:12 -0500</pubDate>
       
       <guid>/tags/hikes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hiking</title>
-      <link>/tags/hiking/</link>
-      <pubDate>Mon, 25 May 2020 21:17:12 -0500</pubDate>
-      
-      <guid>/tags/hiking/</guid>
       <description></description>
     </item>
     
@@ -192,9 +183,18 @@
     </item>
     
     <item>
+      <title>Machine Learning</title>
+      <link>/tags/machine-learning/</link>
+      <pubDate>Mon, 10 Aug 2020 21:17:12 -0500</pubDate>
+      
+      <guid>/tags/machine-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Melanoma</title>
       <link>/tags/melanoma/</link>
-      <pubDate>Sun, 15 Dec 2019 21:17:12 -0500</pubDate>
+      <pubDate>Mon, 10 Aug 2020 21:17:12 -0500</pubDate>
       
       <guid>/tags/melanoma/</guid>
       <description></description>
@@ -203,7 +203,7 @@
     <item>
       <title>Museums</title>
       <link>/tags/museums/</link>
-      <pubDate>Wed, 20 Mar 2019 21:17:12 -0500</pubDate>
+      <pubDate>Fri, 02 Oct 2020 21:17:12 -0500</pubDate>
       
       <guid>/tags/museums/</guid>
       <description></description>
@@ -248,7 +248,7 @@
     <item>
       <title>Predictive Modeling</title>
       <link>/tags/predictive-modeling/</link>
-      <pubDate>Sun, 15 Dec 2019 21:17:12 -0500</pubDate>
+      <pubDate>Mon, 10 Aug 2020 21:17:12 -0500</pubDate>
       
       <guid>/tags/predictive-modeling/</guid>
       <description></description>
@@ -260,6 +260,15 @@
       <pubDate>Fri, 04 Jan 2019 21:17:12 -0500</pubDate>
       
       <guid>/tags/rainier/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Regression</title>
+      <link>/tags/regression/</link>
+      <pubDate>Mon, 10 Aug 2020 21:17:12 -0500</pubDate>
+      
+      <guid>/tags/regression/</guid>
       <description></description>
     </item>
     
@@ -287,6 +296,15 @@
       <pubDate>Fri, 19 Oct 2018 21:17:12 -0500</pubDate>
       
       <guid>/tags/rob-stewart/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Roc</title>
+      <link>/tags/roc/</link>
+      <pubDate>Mon, 10 Aug 2020 21:17:12 -0500</pubDate>
+      
+      <guid>/tags/roc/</guid>
       <description></description>
     </item>
     
@@ -327,11 +345,11 @@
     </item>
     
     <item>
-      <title>South Africa</title>
-      <link>/tags/south-africa/</link>
-      <pubDate>Tue, 15 Jan 2019 21:17:12 -0500</pubDate>
+      <title>Skiing</title>
+      <link>/tags/skiing/</link>
+      <pubDate>Fri, 02 Oct 2020 21:17:12 -0500</pubDate>
       
-      <guid>/tags/south-africa/</guid>
+      <guid>/tags/skiing/</guid>
       <description></description>
     </item>
     
@@ -383,7 +401,7 @@
     <item>
       <title>Winter</title>
       <link>/tags/winter/</link>
-      <pubDate>Sat, 13 Oct 2018 21:17:12 -0500</pubDate>
+      <pubDate>Fri, 02 Oct 2020 21:17:12 -0500</pubDate>
       
       <guid>/tags/winter/</guid>
       <description></description>

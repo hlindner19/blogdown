@@ -6,10 +6,37 @@
     <description>Recent content on Hanna</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zn-Hans</language>
-    <lastBuildDate>Mon, 25 May 2020 21:17:12 -0500</lastBuildDate>
+    <lastBuildDate>Fri, 02 Oct 2020 21:17:12 -0500</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>A Restless Backpacking Guide to Western Europe</title>
+      <link>/travel/western_europe/</link>
+      <pubDate>Fri, 02 Oct 2020 21:17:12 -0500</pubDate>
+      
+      <guid>/travel/western_europe/</guid>
+      <description>There is no better way to experience half a continent than to race through it at lightning speed and squeeze as many destinations as possible into two and a half weeks. If you keep moving fast enough, you hardly have time to realize how exhausted you are, and you get to experience life changing moments like showing up for a 6am flight only to realize your passport is missing.</description>
+    </item>
+    
+    <item>
+      <title>Kleinman blog compeititon</title>
+      <link>/climate/kleinmanblog/blogcomp/</link>
+      <pubDate>Mon, 10 Aug 2020 21:17:12 -0500</pubDate>
+      
+      <guid>/climate/kleinmanblog/blogcomp/</guid>
+      <description>Writing Prompt: The transition of our energy system away from fossil fuels requires bold, out-of-the-box thinking. The Paris climate agreement set a clear goal—to reduce carbon emissions to near zero as quickly as possible. However, the most efficient, effective, and economical methods of reaching that goal are still uncertain.</description>
+    </item>
+    
+    <item>
+      <title>Predicting 5 Year Survival in SLNB-Absent Melanoma Patients</title>
+      <link>/research/melanomapredictivemodeling/</link>
+      <pubDate>Mon, 10 Aug 2020 21:17:12 -0500</pubDate>
+      
+      <guid>/research/melanomapredictivemodeling/</guid>
+      <description>Sentinel lymph node biopsy (SLNB) is a procedure performed for melanoma patients to check whether their melanoma has spread beyond their original tumor site. This information is used for determining an appropriate treatment plan and predicting long term outcomes for patients. However, there are subsets of patients who do not undergo SLNB for a variety reasons: the tumor is considered thin, the patient is elderly, the melanoma is already late stage, or the patient simply elects to not have the procedure.</description>
+    </item>
     
     <item>
       <title>South Africa 2.0</title>
@@ -18,15 +45,6 @@
       
       <guid>/travel/south_africa/</guid>
       <description>I broke two rules on this trip: one was visiting somewhere I’ve already been. The second we don’t talk about. But a rule isn’t a rule unless ‘there’s always an exception’. Plus, on the first rendezvous I stayed entirely around Cape town; this time was basically everything else.</description>
-    </item>
-    
-    <item>
-      <title>Predicting 5 year survival without SLNB in melanoma patients</title>
-      <link>/research/melanomapredictivemodeling/</link>
-      <pubDate>Sun, 15 Dec 2019 21:17:12 -0500</pubDate>
-      
-      <guid>/research/melanomapredictivemodeling/</guid>
-      <description>Sentinel lymph node biopsy (SLNB) is a procedure performed for melanoma patients to check whether their melanoma has spread beyond their original tumor site. This information is used for staging, determining a treatment plan and predicting long term outcomes for patients. There are however subsets of patients who do not undergo SLNB for various reasons: the tumor is considered thin, the patient is elderly, the melanoma is already late stage, or the patient elects to not have the procedure.</description>
     </item>
     
     <item>
@@ -163,24 +181,6 @@
       
       <guid>/travel/oahuhawaii/</guid>
       <description>The trip that started them all. I had zero intentions of traveling to Hawaii. My goal was to get to Canada for a fishing trip, but after my flights fell a part I wasn’t going to be able to make it in time to meet up with my family to catch my ride to Canada.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/about/checkbacklater/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/about/checkbacklater/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title> </title>
-      <link>/research/checkbacklater/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/research/checkbacklater/</guid>
-      <description></description>
     </item>
     
   </channel>

@@ -3,7 +3,7 @@ title: "South Africa 2.0"
 author: "Hanna Lindner"
 date: 2020-05-25T21:17:12-05:00 
 categories: ["Travel"]
-tags: ["Africa", "Hiking", "Long Weekends"]
+tags: ["Africa", "Hikes", "Long Weekends", "Climbing"]
 img: "images/travel/South_Africa/IMG_0054.jpg"
 summaryLength: 30
 ---

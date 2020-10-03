@@ -6,15 +6,24 @@
     <description>Recent content in Melanoma on Hanna</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zn-Hans</language>
-    <lastBuildDate>Wed, 15 Jul 2020 21:17:12 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 10 Aug 2020 21:17:12 -0500</lastBuildDate>
     
 	<atom:link href="/tags/melanoma/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Kleinman blog compeititon</title>
+      <link>/climate/kleinmanblog/blogcomp/</link>
+      <pubDate>Mon, 10 Aug 2020 21:17:12 -0500</pubDate>
+      
+      <guid>/climate/kleinmanblog/blogcomp/</guid>
+      <description>Writing Prompt: The transition of our energy system away from fossil fuels requires bold, out-of-the-box thinking. The Paris climate agreement set a clear goal—to reduce carbon emissions to near zero as quickly as possible. However, the most efficient, effective, and economical methods of reaching that goal are still uncertain.</description>
+    </item>
+    
+    <item>
       <title>Predicting 5 Year Survival in SLNB-Absent Melanoma Patients</title>
       <link>/research/melanomapredictivemodeling/</link>
-      <pubDate>Wed, 15 Jul 2020 21:17:12 -0500</pubDate>
+      <pubDate>Mon, 10 Aug 2020 21:17:12 -0500</pubDate>
       
       <guid>/research/melanomapredictivemodeling/</guid>
       <description>Sentinel lymph node biopsy (SLNB) is a procedure performed for melanoma patients to check whether their melanoma has spread beyond their original tumor site. This information is used for determining an appropriate treatment plan and predicting long term outcomes for patients. However, there are subsets of patients who do not undergo SLNB for a variety reasons: the tumor is considered thin, the patient is elderly, the melanoma is already late stage, or the patient simply elects to not have the procedure.</description>
